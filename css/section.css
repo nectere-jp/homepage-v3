@@ -1,0 +1,27 @@
+.section {
+  width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.section__heading {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.section__heading::before {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: attr(data-english);
+  font-size: 25px;
+  font-weight: 400;
+  color: #E35471;
+}
+/*# sourceMappingURL=section.css.map */

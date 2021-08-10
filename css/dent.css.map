@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/common/dent.scss"
+    ],
+    "names": [],
+    "file": "dent.css"
+}

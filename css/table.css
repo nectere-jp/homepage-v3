@@ -1,0 +1,35 @@
+.table {
+  width: 970px;
+  margin: 3px auto 0;
+}
+
+.table__row {
+  display: block;
+  width: 100%;
+  margin-top: -3px;
+  border: 3px solid #cbcbcb;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1) inset;
+}
+
+.table__row:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.table__row:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.table__heding {
+  width: 320px;
+  padding: 25px 85px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.table__data {
+  padding: 25px 0;
+  font-size: 20px;
+  font-weight: 200;
+}
+/*# sourceMappingURL=table.css.map */

@@ -1,0 +1,119 @@
+@import "../common/color.scss";
+
+.cardList {
+  display: grid;
+  gap: 180px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:nth-of-type(even) {
+      flex-direction: column-reverse;
+      .cardList{
+        &__number {
+          left: 50px;
+          right: auto;
+        }
+        &__card {
+          &--image {
+            align-self: flex-end;
+          }
+          &--content {
+            align-self: flex-start;
+            padding-right: 100px;
+            padding-left: 140px;
+          }
+        }
+      }
+    }
+  }
+
+
+  %card {
+    box-shadow: 3px 3px 6px rgba(#000, .2);
+    border-radius: 20px;
+  }
+  &__card {
+    @extend %card;
+    &--image {
+      @extend %card;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 360px;
+      height: 220px;
+      border: 6px solid $pink;
+      background: #fff;
+      z-index: 10;
+      &__image {
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+    &--content {
+      @extend %card;
+      position: relative;
+      width: 840px;
+      padding: 64px 100px;
+      padding-right: 140px;
+      background: $pink;
+      align-self: flex-end;
+      margin: -40px 0;
+    }
+  }
+
+
+  &__number {
+    position: absolute;
+    top: 55px;
+    right: 45px;
+    transform: rotate(90deg);
+    font-size: 44px;
+    font-weight: 200;
+    color: #fff;
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -155px;
+      transform: translateY(50%);
+      content: "";
+      display: block;
+      width: 150px;
+      height: 2px;
+      background: #fff;
+    }
+  }
+  %title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+  }
+  &__title {
+    @extend %title;
+    &--withIcon {
+      position: relative;
+      @extend %title;
+      padding-left: 85px;
+      margin-bottom: 15px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+  }
+  &__subtitle {
+    display: block;
+    font-size: 18px;
+  }
+  &__text {
+    margin: 8px 0 25px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.4;
+    color: #fff;
+  }
+}

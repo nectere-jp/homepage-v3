@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/blocks/service-list.scss"
+    ],
+    "names": [],
+    "file": "service-list.css"
+}

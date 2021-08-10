@@ -1,0 +1,117 @@
+.cardList {
+  display: grid;
+  gap: 180px;
+}
+
+.cardList__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardList__item:nth-of-type(even) {
+  flex-direction: column-reverse;
+}
+
+.cardList__item:nth-of-type(even) .cardList__number {
+  left: 50px;
+  right: auto;
+}
+
+.cardList__item:nth-of-type(even) .cardList__card--image {
+  align-self: flex-end;
+}
+
+.cardList__item:nth-of-type(even) .cardList__card--content {
+  align-self: flex-start;
+  padding-right: 100px;
+  padding-left: 140px;
+}
+
+.cardList .cardList__card, .cardList .cardList__card--image, .cardList .cardList__card--content {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.cardList__card--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 220px;
+  border: 6px solid #E35471;
+  background: #fff;
+  z-index: 10;
+}
+
+.cardList__card--image__image {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.cardList__card--content {
+  position: relative;
+  width: 840px;
+  padding: 64px 100px;
+  padding-right: 140px;
+  background: #E35471;
+  align-self: flex-end;
+  margin: -40px 0;
+}
+
+.cardList__number {
+  position: absolute;
+  top: 55px;
+  right: 45px;
+  transform: rotate(90deg);
+  font-size: 44px;
+  font-weight: 200;
+  color: #fff;
+}
+
+.cardList__number::after {
+  position: absolute;
+  top: 50%;
+  right: -155px;
+  transform: translateY(50%);
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: #fff;
+}
+
+.cardList .cardList__title, .cardList .cardList__title--withIcon {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.cardList__title--withIcon {
+  position: relative;
+  padding-left: 85px;
+  margin-bottom: 15px;
+}
+
+.cardList__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.cardList__subtitle {
+  display: block;
+  font-size: 18px;
+}
+
+.cardList__text {
+  margin: 8px 0 25px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #fff;
+}
+/*# sourceMappingURL=cardList.css.map */

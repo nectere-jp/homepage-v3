@@ -1,0 +1,87 @@
+@import "../common/color.scss";
+
+%decoration {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(43% + 4px);
+    transform: translateX(50%);
+    width: 50%;
+    height: 3px;
+    margin: auto;
+    background: #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(18% - 4px);
+    width: 16px;
+    height: 16px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+%button {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(#000, .2);
+  font-weight: 500;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button {
+  @extend %button;
+  padding: 25px 0;
+  padding-right: 120px;
+  border-radius: 45px;
+  font-size: 20px;
+
+  &--sm {
+    @extend %button;
+    padding: 16px 0;
+    padding-right: 86px;
+    border-radius: 73px;
+    font-size: 12px;
+    &__decoration {
+      &--blue {
+        @extend %decoration;
+        width: 10px;
+        background: $blue;
+      }
+      &--pink {
+        @extend %decoration;
+        width: 100px;
+        background: $pink;
+      }
+    }
+  }
+
+  &__decoration {
+    &--blue {
+      @extend %decoration;
+      width: 140px;
+      background: $blue;
+    }
+    &--pink {
+      @extend %decoration;
+      width: 140px;
+      background: $pink;
+    }
+  }
+}

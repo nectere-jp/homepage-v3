@@ -1,0 +1,13 @@
+.footer {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0px 6px rgba(#000, .2) inset;
+  text-align: center;
+  &__logo {
+    width: 254px;
+  }
+  &__copyright {
+    font-size: 13px;
+    font-weight: 200;
+  }
+}

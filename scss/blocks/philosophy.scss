@@ -1,0 +1,33 @@
+@import "../common/color.scss", "../common/dent.scss";
+
+.philosophy {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    @extend %dent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 355px;
+    padding: 12px;
+    background: #fff;
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-size: 29px;
+    font-weight: 500;
+    color: $pink;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: source-han-serif-japanese, serif;
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
+    height: 100px;
+  }
+}

@@ -1,0 +1,39 @@
+.philosophy__item {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+.philosophy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.philosophy__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 355px;
+  padding: 12px;
+  background: #fff;
+}
+
+.philosophy__title {
+  margin-bottom: 40px;
+  font-size: 29px;
+  font-weight: 500;
+  color: #E35471;
+}
+
+.philosophy__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: source-han-serif-japanese, serif;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  height: 100px;
+}
+/*# sourceMappingURL=philosophy.css.map */

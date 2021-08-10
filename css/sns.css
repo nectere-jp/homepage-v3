@@ -1,0 +1,41 @@
+.sns__acount, .sns__tweets {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.sns {
+  display: flex;
+  gap: 15px;
+}
+
+.sns__acount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 40px;
+}
+
+.sns__id {
+  font-size: 25px;
+  font-weight: 500;
+  color: #00C4FD;
+}
+
+.sns__logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background: #00C4FD;
+  font-size: 30px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.sns__tweets {
+  padding: 20px;
+}
+/*# sourceMappingURL=sns.css.map */

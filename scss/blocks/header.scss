@@ -1,0 +1,59 @@
+@import "../common/color.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    background: $blue;
+  }
+  &__logo {
+    width: 160px;
+  }
+  &__right {
+    display: flex;
+    gap: 1px
+  }
+
+  %__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 7px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #fff;
+    &::before {
+      content: attr(data-english);
+      display: block;
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+  &__link {
+    @extend %__link;
+    width: 205px;
+    background: $black;
+    &::before {color: $pink;}
+
+    &--contact {
+      @extend %__link;
+      width: 285px;
+      background: $pink;
+    }
+  }
+}
