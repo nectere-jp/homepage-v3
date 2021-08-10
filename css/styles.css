@@ -872,7 +872,7 @@ body {
   line-height: 1.8;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -913,7 +913,7 @@ body {
   font-weight: 200;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -974,7 +974,7 @@ body {
   font-weight: 500;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -1016,11 +1016,58 @@ body {
 }
 
 .footer {
+  padding: 30px;
   background: #fff;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2) inset;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 254px;
 }
 
 .footer__copyright {
   font-size: 13px;
   font-weight: 200;
+}
+
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.philosophy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.philosophy__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 355px;
+  height: 355px;
+  padding: 12px;
+  background: #fff;
+}
+
+.philosophy__title {
+  margin-bottom: 40px;
+  font-size: 29px;
+  font-weight: 500;
+  color: #E35471;
+}
+
+.philosophy__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: source-han-serif-japanese, serif;
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: center;
+  height: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
