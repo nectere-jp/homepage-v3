@@ -3,6 +3,12 @@
   margin: 3px auto 0;
 }
 
+@media screen and (max-width: 1120px) {
+  .table {
+    width: 100%;
+  }
+}
+
 .table__row {
   display: block;
   width: 100%;
@@ -27,9 +33,17 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 1120px) {
+  .table__heding {
+    width: 250px;
+    padding: 25px 50px;
+  }
+}
+
 .table__data {
   padding: 25px 0;
   font-size: 20px;
   font-weight: 200;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=table.css.map */

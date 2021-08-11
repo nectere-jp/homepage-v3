@@ -4,6 +4,12 @@
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1120px) {
+  .section {
+    width: 600px;
+  }
+}
+
 .section__heading {
   position: relative;
   margin-top: 100px;

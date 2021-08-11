@@ -1,9 +1,10 @@
-@import "../common/color.scss";
+@import "../common/color.scss", "../common/breakpoints.scss";
 
 .section {
   width: 1080px;
   margin: 0 auto;
   padding-bottom: 30px;
+  @include md {width: 600px;}
   &__heading {
     position: relative;
     margin-top: 100px;

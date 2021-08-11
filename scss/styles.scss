@@ -1,4 +1,4 @@
-@import "common/destyle.scss";
+@import "common/destyle.scss", "common/breakpoints.scss";
 
 @import 
   "blocks/body.scss",
@@ -14,5 +14,6 @@
   "blocks/contact.scss",
   "blocks/sns.scss",
   "blocks/footer.scss",
-  "blocks/philosophy.scss"
+  "blocks/philosophy.scss",
+  "blocks/sdgs.scss"
 ;

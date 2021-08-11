@@ -1,8 +1,9 @@
-@import "../common/dent.scss";
+@import "../common/dent.scss", "../common/breakpoints.scss";
 
 .sns {
   display: flex;
   gap: 15px;
+  @include md {flex-direction: column;}
   &__acount {
     @extend %dent;
     display: flex;
@@ -11,6 +12,10 @@
     align-items: center;
     flex-grow: 1;
     padding: 40px;
+    @include md {
+      flex-direction: row;
+      gap: 5px;
+    }
   }
   &__id {
     font-size: 25px;
@@ -20,7 +25,6 @@
   &__logo {
     width: 64px;
     height: 64px;
-    margin-bottom: 5px;
     border-radius: 8px;
     background: #00C4FD;
     font-size: 30px;
@@ -30,5 +34,13 @@
   &__tweets {
     @extend %dent;
     padding: 20px;
+    iframe {
+      width: 400px;
+      height: 450px;
+      @include md {
+        width: 100%;
+        height: 700px;
+      }
+    }
   }
 }

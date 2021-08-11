@@ -1,4 +1,4 @@
-@import "../common/dent.scss", "../common/color.scss";
+@import "../common/dent.scss", "../common/color.scss", "../common/breakpoints.scss";
 
 .contact {
   display: grid;
@@ -6,13 +6,17 @@
   gap: 15px;
   grid-template-rows: 135px 135px;
   justify-content: space-between;
-
+  @include md {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
   %category {
     @extend %dent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 35px 55px;
+    gap: 15px;
   }
   &__category {
     &--email {

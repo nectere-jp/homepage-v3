@@ -52,6 +52,14 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 1120px) {
+  .button {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 .button--sm {
   padding: 16px 0;
   padding-right: 86px;

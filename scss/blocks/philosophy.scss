@@ -1,8 +1,12 @@
-@import "../common/color.scss", "../common/dent.scss";
+@import "../common/color.scss", "../common/dent.scss", "../common/breakpoints.scss";
 
 .philosophy {
   display: flex;
   justify-content: space-between;
+  @include md {
+    flex-direction: column;
+    gap: 15px;
+  }
   &__item {
     @extend %dent;
     display: flex;
@@ -13,6 +17,11 @@
     height: 355px;
     padding: 12px;
     background: #fff;
+    @include md {
+      width: 100%;
+      height: auto;
+      padding: 70px 15px;
+    }
   }
   &__title {
     margin-bottom: 40px;
@@ -29,5 +38,9 @@
     line-height: 1.4;
     text-align: center;
     height: 100px;
+    @include md {
+      display: block;
+      height: auto;
+    }
   }
 }

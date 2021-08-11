@@ -12,11 +12,19 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1120px) {
+  .contact {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+}
+
 .contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 35px 55px;
+  gap: 15px;
 }
 
 .contact__category--email {

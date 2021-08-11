@@ -1,4 +1,4 @@
-@import "../common/color.scss";
+@import "../common/color.scss", "../common/breakpoints.scss";
 
 .header {
   display: flex;
@@ -18,42 +18,132 @@
   &__logo {
     width: 160px;
   }
-  &__right {
-    display: flex;
-    gap: 1px
+
+  @include md {
+    %burgerMenu {
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      height: 600px;
+      width: 100vw;
+      background: $blue;
+      z-index: 101;
+      transition: all .3s ease-in;
+    }
   }
 
-  %__link {
+  &__right {
+    display: flex;
+    gap: 1px;
+    @include md {
+      @extend %burgerMenu;
+      opacity: 0;
+      &--open {
+        @extend %burgerMenu;
+        opacity: 1;
+      }
+    }
+  }
+  &__filter {
+    opacity: 0;
+    transition: opacity .3s;
+    &--open {
+      position: fixed;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(#000, .7);
+      z-index: 100;
+      transition: opacity .3s;
+    }
+  }
+  %link {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding-top: 7px;
+    box-shadow: 0 3px 6px rgba(#000, .2) inset;
     font-size: 19px;
     font-weight: 700;
     color: #fff;
+    @include md {
+      width: 160px; 
+      height: 200px; 
+      border-radius: 10px;}
     &::before {
       content: attr(data-english);
       display: block;
-      position: absolute;
-      top: 18px;
-      left: 50%;
-      transform: translateX(-50%);
       font-weight: 400;
       font-size: 12px;
     }
   }
   &__link {
-    @extend %__link;
     width: 205px;
+    @extend %link;
     background: $black;
+    @include md {background: #fff; color: $black !important;}
     &::before {color: $pink;}
 
     &--contact {
-      @extend %__link;
       width: 285px;
+      @extend %link;
       background: $pink;
+    }
+  }
+  &__burgerContainer {
+    position: relative;
+    display: none;
+    width: 80px;
+    height: 80px;
+    background: $pink;
+    box-shadow: 0 3px 6px rgba(#000, .2) inset;
+    cursor: pointer;
+    z-index: 1000;
+    @include md {display: block;}
+  }
+  %burger {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    transition: all .3s;
+  }
+  &__burger {
+    &--1 {
+      @extend %burger;
+      transform: translateY(calc(-50% - 11px));
+      &--open {
+        @extend %burger;
+        transform: rotate(225deg);
+      }
+    }
+    &--2 {
+      @extend %burger;
+      transform: translateY(-50%);
+      opacity: 1;
+      &--open {
+        @extend %burger;
+        opacity: 0;
+      }
+    }
+    &--3 {
+      @extend %burger;
+      transform: translateY(calc(-50% + 11px));
+      &--open {
+        @extend %burger;
+        transform: rotate(-45deg);
+      }
     }
   }
 }

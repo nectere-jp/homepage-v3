@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAC;EACN,OAAO,EAAE,YAAY;EACrB,MAAM,EAAE,CAAC;CACV",
-    "sources": [
-        "../scss/blocks/nowrap.scss"
-    ],
-    "names": [],
-    "file": "nowrap.css"
-}

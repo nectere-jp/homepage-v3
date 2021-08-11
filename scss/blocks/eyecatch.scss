@@ -33,5 +33,6 @@
     font-weight: 900;
     font-size: 50px;
     color: #fff;
+    @include md {left: calc((100vw - 600px)/2); width: 600px;}
   }
 }

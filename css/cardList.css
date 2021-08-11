@@ -3,6 +3,12 @@
   gap: 180px;
 }
 
+@media screen and (max-width: 1120px) {
+  .cardList {
+    gap: 100px;
+  }
+}
+
 .cardList__item {
   display: flex;
   flex-direction: column;
@@ -10,6 +16,12 @@
 
 .cardList__item:nth-of-type(even) {
   flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 1120px) {
+  .cardList__item:nth-of-type(even) {
+    flex-direction: column;
+  }
 }
 
 .cardList__item:nth-of-type(even) .cardList__number {
@@ -27,6 +39,19 @@
   padding-left: 140px;
 }
 
+@media screen and (max-width: 1120px) {
+  .cardList__item:nth-of-type(even) .cardList__card--content {
+    padding: 45px 55px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .cardList__item:nth-of-type(even) .cardList__title, .cardList__item:nth-of-type(even) .cardList__title--withIcon, .cardList__item:nth-of-type(even) .cardList__text {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+}
+
 .cardList .cardList__card, .cardList .cardList__card--image, .cardList .cardList__card--content {
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -40,7 +65,6 @@
   height: 220px;
   border: 6px solid #E35471;
   background: #fff;
-  z-index: 10;
 }
 
 .cardList__card--image__image {
@@ -56,11 +80,20 @@
   background: #E35471;
   align-self: flex-end;
   margin: -40px 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1120px) {
+  .cardList__card--content {
+    width: 100%;
+    margin: 10px 0;
+    padding: 45px 55px;
+  }
 }
 
 .cardList__number {
   position: absolute;
-  top: 55px;
+  top: 45px;
   right: 45px;
   transform: rotate(90deg);
   font-size: 44px;
@@ -80,10 +113,23 @@
   background: #fff;
 }
 
+@media screen and (max-width: 1120px) {
+  .cardList__number::after {
+    right: -105px;
+    width: 100px;
+  }
+}
+
 .cardList .cardList__title, .cardList .cardList__title--withIcon {
   font-size: 32px;
   font-weight: 500;
   color: #fff;
+}
+
+@media screen and (max-width: 1120px) {
+  .cardList .cardList__title, .cardList .cardList__title--withIcon {
+    margin-right: 90px;
+  }
 }
 
 .cardList__title--withIcon {
@@ -113,5 +159,11 @@
   font-weight: 200;
   line-height: 1.4;
   color: #fff;
+}
+
+@media screen and (max-width: 1120px) {
+  .cardList__text {
+    margin-right: 90px;
+  }
 }
 /*# sourceMappingURL=cardList.css.map */

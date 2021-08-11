@@ -1,4 +1,4 @@
-@import "../common/color.scss";
+@import "../common/color.scss", "../common/breakpoints.scss";
 
 %decoration {
   position: absolute;
@@ -51,6 +51,11 @@
   padding-right: 120px;
   border-radius: 45px;
   font-size: 20px;
+  @include md {
+    font-size: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   &--sm {
     @extend %button;
