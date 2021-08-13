@@ -12,23 +12,31 @@
     background: #fff;
     box-shadow: 0 3px 6px rgba(#000, .1) inset;
     &:first-child {
-      border-radius: 10px 10px 0 0;
-    }
+      border-radius: 10px 10px 0 0;}
     &:last-child {
-      border-radius: 0 0 10px 10px;
-    }
+      border-radius: 0 0 10px 10px;}
   }
   &__heding {
     width: 320px;
     padding: 25px 85px;
     font-size: 25px;
     font-weight: 500;
-    @include md {width: 250px; padding: 25px 50px;}
+    @include md {
+      width: 250px;
+      padding: 25px 50px;}
+    @include sm {
+      display: block;
+      padding-left: 32px;
+      padding-bottom: 10px;
+      font-size: 20px;}
   }
   &__data {
     padding: 25px 0;
     font-size: 20px;
     font-weight: 200;
     padding-right: 50px;
+    @include sm {
+      padding: 10px 10px 25px 50px;
+      font-size: 15px;}
   }
 }

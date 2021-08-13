@@ -5,8 +5,7 @@
   justify-content: space-between;
   @include md {
     flex-direction: column;
-    gap: 15px;
-  }
+    gap: 15px;}
   &__item {
     @extend %dent;
     display: flex;
@@ -20,14 +19,14 @@
     @include md {
       width: 100%;
       height: auto;
-      padding: 70px 15px;
-    }
+      padding: 70px 15px;}
   }
   &__title {
     margin-bottom: 40px;
     font-size: 29px;
     font-weight: 500;
     color: $pink;
+    @include sm {font-size: 24px;}
   }
   &__text {
     display: flex;
@@ -40,7 +39,7 @@
     height: 100px;
     @include md {
       display: block;
-      height: auto;
-    }
+      height: auto;}
+    @include sm {font-size: 15px;}
   }
 }

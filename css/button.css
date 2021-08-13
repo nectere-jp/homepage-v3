@@ -1,4 +1,4 @@
-.button--sm__decoration--blue, .button--sm__decoration--pink, .button__decoration--blue, .button__decoration--pink {
+.button--sm__decoration--pink, .button__decoration--blue, .button__decoration--pink {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7,7 +7,7 @@
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.button--sm__decoration--blue::before, .button--sm__decoration--pink::before, .button__decoration--blue::before, .button__decoration--pink::before {
+.button--sm__decoration--pink::before, .button__decoration--blue::before, .button__decoration--pink::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,7 +20,7 @@
   background: #fff;
 }
 
-.button--sm__decoration--blue::after, .button--sm__decoration--pink::after, .button__decoration--blue::after, .button__decoration--pink::after {
+.button--sm__decoration--pink::after, .button__decoration--blue::after, .button__decoration--pink::after {
   content: "";
   position: absolute;
   top: 0;
@@ -52,11 +52,17 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .button {
     font-size: 17px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .button {
+    padding-right: 70px;
   }
 }
 
@@ -67,9 +73,10 @@
   font-size: 12px;
 }
 
-.button--sm__decoration--blue {
-  width: 10px;
-  background: #135B86;
+@media screen and (max-width: 650px) {
+  .button--sm {
+    padding-right: 70px;
+  }
 }
 
 .button--sm__decoration--pink {
@@ -77,13 +84,31 @@
   background: #E35471;
 }
 
+@media screen and (max-width: 650px) {
+  .button--sm__decoration--pink {
+    width: 80px;
+  }
+}
+
 .button__decoration--blue {
   width: 140px;
   background: #135B86;
 }
 
+@media screen and (max-width: 650px) {
+  .button__decoration--blue {
+    width: 80px;
+  }
+}
+
 .button__decoration--pink {
   width: 140px;
   background: #E35471;
+}
+
+@media screen and (max-width: 650px) {
+  .button__decoration--pink {
+    width: 80px;
+  }
 }
 /*# sourceMappingURL=button.css.map */

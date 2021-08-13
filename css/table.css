@@ -3,7 +3,7 @@
   margin: 3px auto 0;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .table {
     width: 100%;
   }
@@ -33,10 +33,19 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .table__heding {
     width: 250px;
     padding: 25px 50px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .table__heding {
+    display: block;
+    padding-left: 32px;
+    padding-bottom: 10px;
+    font-size: 20px;
   }
 }
 
@@ -45,5 +54,12 @@
   font-size: 20px;
   font-weight: 200;
   padding-right: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .table__data {
+    padding: 10px 10px 25px 50px;
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=table.css.map */

@@ -14,13 +14,14 @@
     padding: 40px;
     @include md {
       flex-direction: row;
-      gap: 5px;
-    }
+      gap: 5px;}
+    @include sm {padding: 20px;}
   }
   &__id {
     font-size: 25px;
     font-weight: 500;
     color: #00C4FD;
+    @include sm {font-size: 18px;}
   }
   &__logo {
     width: 64px;
@@ -30,6 +31,9 @@
     font-size: 30px;
     color: #fff;
     line-height: 1.5;
+    @include sm {
+      width: 40px;
+      height: 40px;}
   }
   &__tweets {
     @extend %dent;

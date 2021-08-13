@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .contact {
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -25,6 +25,12 @@
   justify-content: center;
   padding: 35px 55px;
   gap: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel {
+    padding: 30px 40px;
+  }
 }
 
 .contact__category--email {
@@ -41,10 +47,22 @@
   margin-bottom: 35px;
 }
 
+@media screen and (max-width: 650px) {
+  .contact__container {
+    flex-direction: column;
+  }
+}
+
 .contact__title {
   font-size: 28px;
   font-weight: 500;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .contact__title {
+    font-size: 22px;
+  }
 }
 
 .contact__title::after {
@@ -56,14 +74,32 @@
   color: #E35471;
 }
 
+@media screen and (max-width: 650px) {
+  .contact__title::after {
+    font-size: 10px;
+  }
+}
+
 .contact__colon {
   margin: 0 10px;
   font-size: 28px;
   color: #E35471;
 }
 
+@media screen and (max-width: 650px) {
+  .contact__colon {
+    transform: rotate(90deg);
+  }
+}
+
 .contact__adress {
   font-size: 17px;
   font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+  .contact__adress {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

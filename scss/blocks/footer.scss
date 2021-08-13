@@ -5,6 +5,7 @@
   text-align: center;
   &__logo {
     width: 254px;
+    @include sm {width: 220px;}
   }
   &__copyright {
     font-size: 13px;

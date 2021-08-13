@@ -3,9 +3,15 @@
   gap: 180px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList {
     gap: 100px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList {
+    gap: 80px;
   }
 }
 
@@ -18,7 +24,7 @@
   flex-direction: column-reverse;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList__item:nth-of-type(even) {
     flex-direction: column;
   }
@@ -27,6 +33,13 @@
 .cardList__item:nth-of-type(even) .cardList__number {
   left: 50px;
   right: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__item:nth-of-type(even) .cardList__number {
+    left: auto;
+    right: 20px;
+  }
 }
 
 .cardList__item:nth-of-type(even) .cardList__card--image {
@@ -39,16 +52,28 @@
   padding-left: 140px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList__item:nth-of-type(even) .cardList__card--content {
     padding: 45px 55px;
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 650px) {
+  .cardList__item:nth-of-type(even) .cardList__card--content {
+    padding: 50px 15px 35px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
   .cardList__item:nth-of-type(even) .cardList__title, .cardList__item:nth-of-type(even) .cardList__title--withIcon, .cardList__item:nth-of-type(even) .cardList__text {
     margin-right: 0;
     margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__item:nth-of-type(even) .cardList__title, .cardList__item:nth-of-type(even) .cardList__title--withIcon, .cardList__item:nth-of-type(even) .cardList__text {
+    margin-left: 0;
   }
 }
 
@@ -67,9 +92,11 @@
   background: #fff;
 }
 
-.cardList__card--image__image {
-  height: 100%;
-  margin: 0 auto;
+@media screen and (max-width: 650px) {
+  .cardList__card--image {
+    width: 230px;
+    height: 140px;
+  }
 }
 
 .cardList__card--content {
@@ -83,12 +110,23 @@
   z-index: -1;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList__card--content {
     width: 100%;
     margin: 10px 0;
     padding: 45px 55px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__card--content {
+    padding: 50px 15px 35px;
+  }
+}
+
+.cardList__image {
+  height: 100%;
+  margin: 0 auto;
 }
 
 .cardList__number {
@@ -99,6 +137,15 @@
   font-size: 44px;
   font-weight: 200;
   color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__number {
+    font-size: 31px;
+    transform: rotate(0);
+    top: 15px;
+    right: 20px;
+  }
 }
 
 .cardList__number::after {
@@ -113,10 +160,16 @@
   background: #fff;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList__number::after {
     right: -105px;
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__number::after {
+    display: none;
   }
 }
 
@@ -126,9 +179,16 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList .cardList__title, .cardList .cardList__title--withIcon {
     margin-right: 90px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList .cardList__title, .cardList .cardList__title--withIcon {
+    margin-right: 0;
+    font-size: 26px;
   }
 }
 
@@ -136,6 +196,12 @@
   position: relative;
   padding-left: 85px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__title--withIcon {
+    padding-left: 65px;
+  }
 }
 
 .cardList__icon {
@@ -148,9 +214,22 @@
   border-radius: 5px;
 }
 
+@media screen and (max-width: 650px) {
+  .cardList__icon {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 .cardList__subtitle {
   display: block;
   font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__subtitle {
+    font-size: 13px;
+  }
 }
 
 .cardList__text {
@@ -161,9 +240,16 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .cardList__text {
     margin-right: 90px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .cardList__text {
+    margin-right: 0;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=cardList.css.map */

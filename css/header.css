@@ -7,6 +7,12 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 650px) {
+  .header {
+    height: 70px;
+  }
+}
+
 .header__left {
   display: flex;
   justify-content: center;
@@ -15,22 +21,43 @@
   background: #135B86;
 }
 
+@media screen and (max-width: 1220px) {
+  .header__left {
+    width: 230px;
+  }
+}
+
 .header__logo {
   width: 160px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 650px) {
+  .header__logo {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
   .header .header__right, .header .header__right--open {
     display: flex;
     position: fixed;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 15px;
     height: 600px;
     width: 100vw;
+    padding-top: 40px;
     background: #135B86;
     z-index: 101;
     transition: all .3s ease-in;
+  }
+}
+
+@media screen and (max-width: 1220px) and (max-width: 650px) {
+  .header .header__right, .header .header__right--open {
+    height: 400px;
   }
 }
 
@@ -39,7 +66,7 @@
   gap: 1px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .header__right {
     opacity: 0;
   }
@@ -78,11 +105,19 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .header .header__link, .header .header__link--contact {
     width: 160px;
     height: 200px;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header .header__link, .header .header__link--contact {
+    width: 125px;
+    height: 75px;
+    font-size: 15px;
   }
 }
 
@@ -93,12 +128,18 @@
   font-size: 12px;
 }
 
+@media screen and (max-width: 650px) {
+  .header .header__link::before, .header .header__link--contact::before {
+    font-size: 10px;
+  }
+}
+
 .header__link {
   width: 205px;
   background: #101010;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .header__link {
     background: #fff;
     color: #101010 !important;
@@ -125,9 +166,16 @@
   z-index: 1000;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .header__burgerContainer {
     display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__burgerContainer {
+    width: 70px;
+    height: 70px;
   }
 }
 

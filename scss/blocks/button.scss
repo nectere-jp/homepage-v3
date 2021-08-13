@@ -54,25 +54,26 @@
   @include md {
     font-size: 17px;
     padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
+    padding-bottom: 20px;}
+  @include sm {padding-right: 70px;}
   &--sm {
     @extend %button;
     padding: 16px 0;
     padding-right: 86px;
     border-radius: 73px;
     font-size: 12px;
+    @include sm {padding-right: 70px;}
     &__decoration {
-      &--blue {
-        @extend %decoration;
-        width: 10px;
-        background: $blue;
-      }
+      // &--blue {
+      //   @extend %decoration;
+      //   width: 100px;
+      //   background: $blue;
+      // }
       &--pink {
         @extend %decoration;
         width: 100px;
         background: $pink;
+        @include sm { width: 80px; }
       }
     }
   }
@@ -82,11 +83,13 @@
       @extend %decoration;
       width: 140px;
       background: $blue;
+      @include sm {width: 80px;}
     }
     &--pink {
       @extend %decoration;
       width: 140px;
       background: $pink;
+      @include sm {width: 80px;}
     }
   }
 }

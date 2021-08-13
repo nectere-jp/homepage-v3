@@ -7,6 +7,7 @@
   width: 100%;
   height: 80px;
   z-index: 10;
+  @include sm {height: 70px;}
 
   &__left {
     display: flex;
@@ -14,9 +15,11 @@
     align-items: center;
     width: 260px;
     background: $blue;
+    @include md {width: 230px;}
   }
   &__logo {
     width: 160px;
+    @include sm {width: 140px;}
   }
 
   @include md {
@@ -25,12 +28,18 @@
       position: fixed;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      align-content: center;
       gap: 15px;
       height: 600px;
       width: 100vw;
+      padding-top: 40px;
       background: $blue;
       z-index: 101;
       transition: all .3s ease-in;
+      @include sm {
+        height: 400px;
+      }
     }
   }
 
@@ -76,11 +85,16 @@
       width: 160px; 
       height: 200px; 
       border-radius: 10px;}
+    @include sm {
+      width: 125px;
+      height: 75px;
+      font-size: 15px;}
     &::before {
       content: attr(data-english);
       display: block;
       font-weight: 400;
       font-size: 12px;
+      @include sm {font-size: 10px;}
     }
   }
   &__link {
@@ -106,6 +120,10 @@
     cursor: pointer;
     z-index: 1000;
     @include md {display: block;}
+    @include sm {
+      width: 70px;
+      height: 70px;
+    }
   }
   %burger {
     position: absolute;

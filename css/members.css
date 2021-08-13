@@ -4,7 +4,7 @@
   align-items: stretch;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .members {
     flex-direction: column;
     gap: 15px;
@@ -20,13 +20,19 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1120px) and (min-width: 651px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .members__card {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: 30px;
     width: 100%;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .members__card {
+    width: 100%;
   }
 }
 
@@ -38,7 +44,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1120px) and (min-width: 651px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .members__image {
     width: 200px;
     height: 100%;
@@ -58,10 +64,17 @@
   color: #fff;
 }
 
-@media screen and (max-width: 1120px) and (min-width: 651px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .members__note {
     text-align: center;
     top: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .members__note {
+    font-size: 15px;
+    right: 10px;
   }
 }
 
@@ -78,27 +91,27 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 650px) {
+  .members__note::after {
+    display: none;
+  }
+}
+
 .members__name {
   margin: 50px 0 10px;
   font-size: 28px;
   font-weight: 500;
 }
 
-@media screen and (max-width: 1120px) and (min-width: 651px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .members__name {
     margin-bottom: 5px;
   }
 }
 
 .members__position {
-  font-size: 12px;
+  font-size: 14px;
   color: #E35471;
-}
-
-@media screen and (max-width: 1120px) and (min-width: 651px) {
-  .members__position {
-    font-size: 14px;
-  }
 }
 
 .members__message {
@@ -108,10 +121,16 @@
   line-height: 1.8;
 }
 
-@media screen and (max-width: 1120px) and (min-width: 651px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .members__message {
     margin-left: 0;
     margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .members__message {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=members.css.map */

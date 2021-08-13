@@ -4,9 +4,15 @@
   padding-bottom: 30px;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1220px) {
   .section {
     width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section {
+    width: 310px;
   }
 }
 
@@ -19,6 +25,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  .section__heading {
+    font-size: 34px;
+  }
+}
+
 .section__heading::before {
   position: absolute;
   top: -25px;
@@ -29,5 +41,12 @@
   font-size: 25px;
   font-weight: 400;
   color: #E35471;
+}
+
+@media screen and (max-width: 650px) {
+  .section__heading::before {
+    top: -20px;
+    font-size: 19px;
+  }
 }
 /*# sourceMappingURL=section.css.map */

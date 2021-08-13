@@ -20,8 +20,9 @@
       grid-template-columns: 200px 1fr;
       gap: 30px;
       width: 100%;
-      text-align: left;
-    }
+      text-align: left;}
+    @include sm {
+      width: 100%;}
   }
   &__image {
     display: block;
@@ -47,8 +48,10 @@
     color: #fff;
     @include onlyMd {
       text-align: center;
-      top: 40px;
-    }
+      top: 40px;}
+    @include sm {
+      font-size: 15px;
+      right: 10px;}
     &::after {
       content: "";
       display: block;
@@ -60,6 +63,7 @@
       clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
       background: #d03c5a;
       z-index: -1;
+      @include sm {display: none;}
     }
   }
   &__name {
@@ -71,11 +75,8 @@
     }
   }
   &__position {
-    font-size: 12px;
+    font-size: 14px;
     color: $pink;
-    @include onlyMd {
-      font-size: 14px;
-    }
   }
   &__message {
     margin: 30px 15px 35px;
@@ -84,7 +85,8 @@
     line-height: 1.8;
     @include onlyMd {
       margin-left: 0;
-      margin-right: 30px;
-    }
+      margin-right: 30px;}
+    @include sm {
+      font-size: 13px;}
   }
 }

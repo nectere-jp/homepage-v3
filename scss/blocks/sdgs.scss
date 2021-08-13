@@ -13,12 +13,14 @@
     text-align: center;
     &Image {
       width: 500px;
+      @include sm {width: 100%;}
     }
     &Text {
       display: block;
       margin-top: 10px;
       font-size: 22px;
       font-weight: 500;
+      @include sm {font-size: 14px;}
     }
   }
   &__grid {
@@ -29,8 +31,9 @@
     gap: 15px 0; 
     @include md {
       grid-template-columns: 100%;
-      grid-template-rows: repeat(5, 105px);
-    }
+      grid-template-rows: repeat(5, 105px);}
+    @include sm {
+      grid-template-rows: repeat(5, 70px);}
   }
   &__goal {
     &Text {
@@ -57,7 +60,7 @@
     &--4 {
       @extend %goal;
       display: none;
-      border-color: #C50E28;
+      border: 0;
       background: #C50E28;
       @include md {
         display: block;

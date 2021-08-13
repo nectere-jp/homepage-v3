@@ -4,6 +4,7 @@
   display: grid;
   gap: 180px;
   @include md {gap: 100px;}
+  @include sm {gap: 80px;}
   &__item {
     display: flex;
     flex-direction: column;
@@ -14,6 +15,9 @@
         &__number {
           left: 50px;
           right: auto;
+          @include sm {
+            left: auto;
+            right: 20px;}
         }
         &__card {
           &--image {
@@ -24,12 +28,14 @@
             padding-right: 100px;
             padding-left: 140px;
             @include md {padding: 45px 55px;}
+            @include sm {padding: 50px 15px 35px;}
           }
         }
         &__title,
         &__title--withIcon,
         &__text {
           @include md {margin-right: 0; margin-left: 100px;}
+          @include sm {margin-left: 0;}
         }
       }
     }
@@ -51,11 +57,7 @@
       height: 220px;
       border: 6px solid $pink;
       background: #fff;
-      // z-index: 5;
-      &__image {
-        height: 100%;
-        margin: 0 auto;
-      }
+      @include sm {width: 230px; height: 140px;}
     }
     &--content {
       @extend %card;
@@ -70,11 +72,14 @@
       @include md {
         width: 100%;
         margin: 10px 0;
-        padding: 45px 55px;
-      }
+        padding: 45px 55px;}
+      @include sm {padding: 50px 15px 35px;}
     }
   }
-
+  &__image {
+    height: 100%;
+    margin: 0 auto;
+  }
 
   &__number {
     position: absolute;
@@ -84,6 +89,11 @@
     font-size: 44px;
     font-weight: 200;
     color: #fff;
+    @include sm {
+      font-size: 31px;
+      transform: rotate(0);
+      top: 15px;
+      right: 20px;}
     &::after {
       position: absolute;
       top: 50%;
@@ -96,8 +106,9 @@
       background: #fff;
       @include md {
         right: -105px;
-        width: 100px;
-      }
+        width: 100px;}
+      @include sm {
+        display: none;}
     }
   }
   %title {
@@ -105,6 +116,9 @@
     font-weight: 500;
     color: #fff;
     @include md {margin-right: 90px;}
+    @include sm {
+      margin-right: 0;
+      font-size: 26px;}
   }
   &__title {
     @extend %title;
@@ -113,6 +127,7 @@
       @extend %title;
       padding-left: 85px;
       margin-bottom: 15px;
+      @include sm {padding-left: 65px;}
     }
   }
   &__icon {
@@ -123,10 +138,14 @@
     width: 70px;
     height: 70px;
     border-radius: 5px;
+    @include sm {
+      width: 55px;
+      height: 55px;}
   }
   &__subtitle {
     display: block;
     font-size: 18px;
+    @include sm {font-size: 13px;}
   }
   &__text {
     margin: 8px 0 25px;
@@ -135,5 +154,6 @@
     line-height: 1.4;
     color: #fff;
     @include md {margin-right: 90px;}
+    @include sm {margin-right: 0; font-size: 15px;}
   }
 }
