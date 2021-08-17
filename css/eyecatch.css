@@ -54,4 +54,17 @@
     font-size: 25px;
   }
 }
+
+.eyecatch__subtitle {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 650px) {
+  .eyecatch__subtitle {
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=eyecatch.css.map */

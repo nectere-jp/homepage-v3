@@ -69,6 +69,7 @@
 @media screen and (max-width: 1220px) {
   .header__right {
     opacity: 0;
+    pointer-events: none;
   }
   .header__right--open {
     opacity: 1;
@@ -76,8 +77,23 @@
 }
 
 .header__filter {
-  opacity: 0;
-  transition: opacity .3s;
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .header__filter {
+    display: block;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    transition: opacity .3s, display 0 1s;
+    pointer-events: none;
+  }
 }
 
 .header__filter--open {

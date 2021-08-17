@@ -1,0 +1,123 @@
+@import "../common/color.scss", "../common/breakpoints.scss";
+
+%cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1px;
+  padding: 20px;
+  border: 1px solid $black;
+  box-shadow: 0 3px 6px rgba(#000, .2) inset;
+  text-align: center;
+  font-size: 17px;
+  @include md {
+    margin-top: 0;
+    padding: 10px 0;
+    border: 0;
+    box-shadow: none;
+    text-align: left;
+  }
+}
+
+.plan {
+  display: grid;
+  grid-template-rows: 100px 210px 70px 120px 70px 70px;
+  margin-left: -1px;
+  background: #fff;
+  @include md {
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(#000, .2) inset;
+    grid-template-rows: repeat(6, auto);
+  }
+  @include sm {padding: 30px;}
+  &__cell {
+    @extend %cell;
+    @include md {
+      display: grid;
+      grid-template-columns: 120px 1fr;}
+    @include sm {
+      grid-template-columns: 100%;
+      padding-left: 15px;}
+    &--sum {
+      @extend %cell;
+      border-top: 5px double $pink;
+      @include md {
+        display: grid;
+        grid-template-columns: 120px 1fr;}
+      @include sm {
+        grid-template-columns: 100%;}
+        padding-left: 15px;}
+    &--title {
+      @extend %cell;
+    }
+  }
+  &__category {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 5px 10px;
+    border: 1px solid $pink;
+    border-radius: 5px;
+    color: $pink;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  &__number {
+    font-size: 16px;
+  }
+  &__name {
+    font-size: 24px;
+    font-weight: 500;
+    @include md {margin-top: 5px; font-size: 30px; font-weight: 700;}
+  }
+  &__heading {
+    display: none;
+    @include md {
+      display: block;
+      width: 120px;
+      padding-right: 30px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: right;
+    }
+    @include sm {text-align: left; margin-left: -15px; margin-bottom: 10px;}
+  }
+  &__note {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &__tagContainer {
+    width: 100%;
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  %tag {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+    @include md {
+      width: auto;
+      margin: 0 !important;
+      padding: 10px 20px;
+    }
+  }
+  &__tag {
+    @extend %tag;
+    background: $pink;
+    &--disabled {
+      @extend %tag;
+    }
+  }
+}

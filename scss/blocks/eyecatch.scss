@@ -37,4 +37,11 @@
     @include md {width: $md;}
     @include sm {width: $sm; font-size: 25px;}
   }
+  &__subtitle {
+    display: block;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    @include sm {font-size: 14px;}
+  }
 }
