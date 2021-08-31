@@ -1,0 +1,55 @@
+.mallearn__feature {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.mallearn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mallearn__feature {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding: 40px 45px;
+}
+
+.mallearn__left {
+  width: 370px;
+  flex-shrink: 0;
+}
+
+.mallearn__title {
+  clear: left;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.mallearn .mallearn__text, .mallearn .mallearn__text--left {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.mallearn__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mallearn__text--left {
+  padding-bottom: 15px;
+}
+
+.mallearn__right {
+  flex-grow: 1;
+}
+
+.mallearn__heading {
+  font-size: 20px;
+  color: #E35471;
+  font-weight: 500;
+}
+/*# sourceMappingURL=mallearn.css.map */

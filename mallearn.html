@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'quf1pqd',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- <?php wp_head(); ?> -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/troubles.css">
+  <link rel="stylesheet" href="./css/mallearn.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <a>
+        <img 
+          src="images/logo-white.png"
+          alt="Nectere"
+          class="header__logo"
+        >
+      </a>
+    </div>
+    <nav class="header__right" id="burgerMenu">
+      <a class="header__link" href="#servicies" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="" data-english="Contact">お問い合わせ</a>
+    </nav>
+    <div class="header__filter" id="burgerFilter"></div>
+    <div class="header__burgerContainer" id="burgerButton">
+      <div class="header__burger--1" id="burgerBar1"></div>
+      <div class="header__burger--2" id="burgerBar2"></div>
+      <div class="header__burger--3" id="burgerBar3"></div>
+    </div>
+    
+  </header>
+  <section class="eyecatch">
+    <img class="eyecatch__image" src="./images/eyecatch-home.png" alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
+    <div class="eyecatch__filter"></div>
+    <h1 class="eyecatch__title">
+      <span class="nowrap">話そう。教え合おう。</span>
+      <span class="eyecatch__subtitle">
+        <span class="nowrap">親譲りの無鉄砲で小供の時から損ばかりしている。</span>
+        <span class="nowrap">小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。</span>
+        <span class="nowrap">なぜそんな無闇をしたと聞く人があるかも知れぬ。</span>
+        <span class="nowrap">別段深い理由でもない。</span>
+      </span>
+    </h1>
+  </section>
+  <main>
+    <section class="section--trouble" id="trouble">
+      <h1 class="section__heading--trouble">
+        <span class="section__subheading">普段の勉強で</span>
+        こんな困りごとないですか？
+      </h1>
+      <div class="troubles">
+        <div class="troubles__item">
+          <div class="troubles__situation">
+            <img src="./images/studyAtSchool.png" alt="学校" class="troubles__situationImage">
+            <a class="troubles__situationText">学校で...</a>
+          </div>
+          <div class="troubles__balloonContainer">
+            <a class="troubles__balloon">授業のペースが自分に合わない</a>
+            <a class="troubles__balloon">本当に身についているのかわからない</a>
+          </div>
+        </div>
+        <div class="troubles__item">
+          <div class="troubles__situation">
+            <img src="./images/studyOnline.png" alt="学校" class="troubles__situationImage">
+            <a class="troubles__situationText">映像授業で...</a>
+          </div>
+          <div class="troubles__balloonContainer">
+            <a class="troubles__balloon">あまり質問できない</a>
+            <a class="troubles__balloon">授業を見るだけだからつまらない</a>
+            <a class="troubles__balloon">動画ダウンロードでギガがやばい</a>
+            <a class="troubles__balloon">友達との関わりがなくてつまらない</a>
+          </div>
+        </div>
+        <div class="troubles__item">
+          <div class="troubles__situation">
+            <img src="./images/studyAtJuku.png" alt="学校" class="troubles__situationImage">
+            <a class="troubles__situationText">塾で...</a>
+          </div>
+          <div class="troubles__balloonContainer">
+            <a class="troubles__balloon">塾までの移動がめんどくさい</a>
+            <a class="troubles__balloon">お金がかかる</a>
+            <a class="troubles__balloon">授業のペースが自分に合わない</a>
+          </div>
+        </div>
+        <div class="troubles__item">
+          <div class="troubles__situation">
+            <img src="./images/studyAtHome.png" alt="学校" class="troubles__situationImage">
+            <a class="troubles__situationText">家で...</a>
+          </div>
+          <div class="troubles__balloonContainer">
+            <a class="troubles__balloon">何をすればいいかわからない</a>
+            <a class="troubles__balloon">友達との関わりがなくてつまらない</a>
+            <a class="troubles__balloon">身についているのかわからない</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="mallearnFeatures">
+      <h1 class="section__heading--mallearn">Mal Learnで解決するかも!?</h1>
+      <div class="mallearn">
+        <div class="mallearn__feature">
+          <div class="mallearn__left">
+            <p class="tag"><span>特徴</span> <span class="tag__number">①</span></p>
+            <h2 class="mallearn__title">スライド形式の授業</h2>
+            <p class="mallearn__text--left">
+              動画授業を紙の教科書のいいとこどりのスライド形式を採用。
+              これによって受けられる恩恵がたくさん！
+            </p>
+            <a href="#" class="button--sm">
+              スライド形式の授業を受けてみる
+              <div class="button--sm__decoration--pink"></div>
+            </a>
+          </div>
+          <div class="mallearn__right">
+            <div class="mallearn__heading">自分にあったペースで学べる</div>
+            <p class="mallearn__text">
+              <span class="nowrap"><span class="highlight">得意な範囲を飛ばす</span>のも</span><span class="nowrap">苦手な</span><span class="nowrap">範囲を</span><span class="nowrap">ゆっくり</span><span class="nowrap">解くのも、</span><span class="nowrap">動画授業よりも</span><span class="nowrap">簡単。</span>
+              <br>
+              <span class="nowrap">書き込んで</span><span class="nowrap">自分だけの</span><span class="nowrap">スライドに</span><span class="nowrap">することも。</span>
+              <br>
+              <span class="nowrap">音声解説付きだから</span><span class="nowrap">普通の参考書よりも</span><span class="nowrap">学びやすい。</span>
+            </p>
+            <div class="mallearn__heading">自分にあったペースで学べる</div>
+            <p class="mallearn__text">
+              <span class="nowrap"><span class="highlight">得意な範囲を飛ばす</span>のも</span><span class="nowrap">苦手な</span><span class="nowrap">範囲を</span><span class="nowrap">ゆっくり</span><span class="nowrap">解くのも、</span><span class="nowrap">動画授業よりも</span><span class="nowrap">簡単。</span>
+              <br>
+              <span class="nowrap">書き込んで</span><span class="nowrap">自分だけの</span><span class="nowrap">スライドに</span><span class="nowrap">することも。</span>
+              <br>
+              <span class="nowrap">音声解説付きだから</span><span class="nowrap">普通の参考書よりも</span><span class="nowrap">学びやすい。</span>
+            </p>
+          </div>
+        </div>
+        <div class="mallearn__feature">
+          <div class="mallearn__left">
+            <p class="tag"><span>特徴</span> <span class="tag__number">①</span></p>
+            <h2 class="mallearn__title">スライド形式の授業</h2>
+            <p class="mallearn__text--left">
+              動画授業を紙の教科書のいいとこどりのスライド形式を採用。
+              これによって受けられる恩恵がたくさん！
+            </p>
+            <a href="#" class="button--sm">
+              スライド形式の授業を受けてみる
+              <div class="button--sm__decoration--pink"></div>
+            </a>
+          </div>
+          <div class="mallearn__right">
+            <div class="mallearn__heading">自分にあったペースで学べる</div>
+            <p class="mallearn__text">
+              <span class="nowrap"><span class="highlight">得意な範囲を飛ばす</span>のも</span><span class="nowrap">苦手な</span><span class="nowrap">範囲を</span><span class="nowrap">ゆっくり</span><span class="nowrap">解くのも、</span><span class="nowrap">動画授業よりも</span><span class="nowrap">簡単。</span>
+              <br>
+              <span class="nowrap">書き込んで</span><span class="nowrap">自分だけの</span><span class="nowrap">スライドに</span><span class="nowrap">することも。</span>
+              <br>
+              <span class="nowrap">音声解説付きだから</span><span class="nowrap">普通の参考書よりも</span><span class="nowrap">学びやすい。</span>
+            </p>
+            <div class="mallearn__heading">自分にあったペースで学べる</div>
+            <p class="mallearn__text">
+              <span class="nowrap"><span class="highlight">得意な範囲を飛ばす</span>のも</span><span class="nowrap">苦手な</span><span class="nowrap">範囲を</span><span class="nowrap">ゆっくり</span><span class="nowrap">解くのも、</span><span class="nowrap">動画授業よりも</span><span class="nowrap">簡単。</span>
+              <br>
+              <span class="nowrap">書き込んで</span><span class="nowrap">自分だけの</span><span class="nowrap">スライドに</span><span class="nowrap">することも。</span>
+              <br>
+              <span class="nowrap">音声解説付きだから</span><span class="nowrap">普通の参考書よりも</span><span class="nowrap">学びやすい。</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <img 
+      class="footer__logo"
+      src="./images/logo.png"
+      alt="Nectere">
+    <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -75,22 +75,6 @@
   }
 }
 
-.plan__category {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  padding: 5px 10px;
-  border: 1px solid #E35471;
-  border-radius: 5px;
-  color: #E35471;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.plan__number {
-  font-size: 16px;
-}
-
 .plan__name {
   font-size: 24px;
   font-weight: 500;

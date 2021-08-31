@@ -53,20 +53,6 @@
       @extend %cell;
     }
   }
-  &__category {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    padding: 5px 10px;
-    border: 1px solid $pink;
-    border-radius: 5px;
-    color: $pink;
-    font-size: 11px;
-    font-weight: 600;
-  }
-  &__number {
-    font-size: 16px;
-  }
   &__name {
     font-size: 24px;
     font-weight: 500;

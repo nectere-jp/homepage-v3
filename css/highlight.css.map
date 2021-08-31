@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,YAAY;EACrB,UAAU,EAAE,6DAAqD;CAClE",
+    "sources": [
+        "../scss/blocks/highlight.scss",
+        "../scss/common/color.scss"
+    ],
+    "names": [],
+    "file": "highlight.css"
+}

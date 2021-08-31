@@ -1,0 +1,45 @@
+@import "../common/breakpoints.scss", "../common/color.scss", "../common/dent.scss";
+
+.mallearn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__feature {
+    @extend %dent;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    padding: 40px 45px;
+  }
+  &__left {
+    width: 370px;
+    flex-shrink: 0;
+  }
+  &__title {
+    clear: left;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  %text {
+    margin: 5px 0;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+  &__text {
+    @extend %text;
+    &:not(:last-child) {margin-bottom: 15px;}
+    &--left {
+      @extend %text;
+      padding-bottom: 15px;
+    }
+  }
+  &__right {
+    flex-grow: 1;
+  }
+  &__heading {
+    font-size: 20px;
+    color: $pink;
+    font-weight: 500;
+  }
+}

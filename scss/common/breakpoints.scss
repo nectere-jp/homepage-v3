@@ -16,6 +16,12 @@
   }
 }
 
+@mixin onlyLg {
+  @media screen and (min-width: 1221px){
+    @content;
+  }
+}
+
   $lg: 1080px;
   $md: 600px;
   $sm: 310px;

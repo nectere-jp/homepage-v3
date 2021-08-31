@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   padding: 40px;
 }
 
@@ -36,29 +37,6 @@
   .feature__item {
     grid-row: auto !important;
   }
-}
-
-.feature__point {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  width: min-content;
-  padding: 5px 10px;
-  border: 1px solid #E35471;
-  border-radius: 5px;
-  color: #E35471;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-@media screen and (max-width: 650px) {
-  .feature__point {
-    padding: 3px 8px;
-  }
-}
-
-.feature__number {
-  font-size: 16px;
 }
 
 .feature__title {

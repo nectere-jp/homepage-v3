@@ -1,0 +1,6 @@
+@import "../common/color.scss";
+
+.highlight {
+  display: inline-block;
+  background: linear-gradient(transparent 40%, rgba($pink, .5) 40%);
+}

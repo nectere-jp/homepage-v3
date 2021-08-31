@@ -1,11 +1,20 @@
 @import "../common/color.scss", "../common/breakpoints.scss";
 
-.section {
+%section {
   width: $lg;
   margin: 0 auto;
   padding-bottom: 30px;
   @include md {width: $md;}
   @include sm {width: $sm;}
+}
+.section {
+  @extend %section;
+  &__subheading {
+    display: block;
+    padding-left: 4px;
+    font-size: 20px;
+    font-weight: 600;
+  }
   &__heading {
     position: relative;
     margin-top: 100px;
@@ -39,10 +48,51 @@
       filter: drop-shadow(0 3px 3px rgba(#000, .2));
       @include sm {font-size: 28px; margin: 50px 0 30px;}
     }
+    &--trouble {
+      width: max-content;
+      color: #fff;
+      margin: 0 auto 30px;
+      padding: 10px 30px;
+      border: 3px solid #fff;
+      font-size: 36px;
+      font-weight: 900;
+    }
     &Image {
       width: 330px;
       margin-bottom: 15px;
       @include sm {width: 190px; margin-bottom: 10px;}
+    }
+    &--mallearn {
+      margin: 130px 0 80px;
+      font-size: 50px;
+      font-weight: 900;
+      color: $pink;
+      text-align: center;
+      filter: drop-shadow(0 3px 3px rgba(#000, .2));
+      @include md {font-size: 45px;}
+    }
+  }
+  &--trouble {
+    @extend %section;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 60px calc((100vw - 1080px) / 2);
+    background: $pink;
+    @include md {padding: 60px calc((100vw - 600px) / 2)}
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 100%);
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 175px 0 175px;
+      border-color: $pink transparent transparent transparent;
     }
   }
 }
