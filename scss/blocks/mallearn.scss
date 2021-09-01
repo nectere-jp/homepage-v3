@@ -10,10 +10,13 @@
     align-items: center;
     gap: 45px;
     padding: 40px 45px;
+    @include md {
+      flex-direction: column;}
   }
   &__left {
     width: 370px;
     flex-shrink: 0;
+    @include md {width: 100%}
   }
   &__title {
     clear: left;
@@ -36,6 +39,7 @@
   }
   &__right {
     flex-grow: 1;
+    @include md {width: 100%}
   }
   &__heading {
     font-size: 20px;

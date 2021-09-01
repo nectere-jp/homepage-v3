@@ -1,0 +1,15 @@
+@import "../common/dent.scss", "../common/color.scss";
+
+.mallearnPricing {
+  @extend %dent;
+  padding: 100px 40px;
+  text-align: center;
+  &__title {
+    color: $pink;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  &__text {
+    margin-top: 10px;
+  }
+}

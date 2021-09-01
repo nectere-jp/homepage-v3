@@ -1,0 +1,21 @@
+.mallearnPricing {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.mallearnPricing {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.mallearnPricing__title {
+  color: #E35471;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.mallearnPricing__text {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=mallearnPricing.css.map */

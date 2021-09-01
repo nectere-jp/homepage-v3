@@ -17,9 +17,21 @@
   padding: 40px 45px;
 }
 
+@media screen and (max-width: 1220px) {
+  .mallearn__feature {
+    flex-direction: column;
+  }
+}
+
 .mallearn__left {
   width: 370px;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .mallearn__left {
+    width: 100%;
+  }
 }
 
 .mallearn__title {
@@ -45,6 +57,12 @@
 
 .mallearn__right {
   flex-grow: 1;
+}
+
+@media screen and (max-width: 1220px) {
+  .mallearn__right {
+    width: 100%;
+  }
 }
 
 .mallearn__heading {

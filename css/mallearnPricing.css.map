@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAEA,ACFA,gBDEgB,CCFV;EACJ,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAM,kBAAI,CAAM,KAAK;EAC1C,UAAU,EAAE,IAAI;CACjB;;ADFD,AAAA,gBAAgB,CAAC;EAEf,OAAO,EAAE,UAAU;EACnB,UAAU,EAAE,MAAM;CASnB;;AARE,AAAD,uBAAQ,CAAC;EACP,KAAK,EEPF,OAAO;EFQV,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;CACjB;;AACA,AAAD,sBAAO,CAAC;EACN,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "../scss/blocks/mallearnPricing.scss",
+        "../scss/common/dent.scss",
+        "../scss/common/color.scss"
+    ],
+    "names": [],
+    "file": "mallearnPricing.css"
+}

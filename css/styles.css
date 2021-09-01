@@ -770,6 +770,20 @@ body {
   }
 }
 
+.eyecatch__text {
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .eyecatch__text {
+    font-size: 14px;
+  }
+}
+
 .section, .section--trouble {
   width: 1080px;
   margin: 0 auto;
@@ -1434,7 +1448,7 @@ body {
   }
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -1505,7 +1519,7 @@ body {
   }
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -1610,7 +1624,7 @@ body {
   }
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -1716,7 +1730,7 @@ body {
   font-weight: 200;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -1901,7 +1915,7 @@ body {
   border-color: #DC097B;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -2198,7 +2212,7 @@ body {
   font-size: 16px;
 }
 
-.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation {
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
   background: #fff;
@@ -2374,5 +2388,99 @@ body {
 .highlight {
   display: inline-block;
   background: linear-gradient(transparent 40%, rgba(227, 84, 113, 0.5) 40%);
+}
+
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.mallearn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mallearn__feature {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  padding: 40px 45px;
+}
+
+@media screen and (max-width: 1220px) {
+  .mallearn__feature {
+    flex-direction: column;
+  }
+}
+
+.mallearn__left {
+  width: 370px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .mallearn__left {
+    width: 100%;
+  }
+}
+
+.mallearn__title {
+  clear: left;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.mallearn .mallearn__text, .mallearn .mallearn__text--left {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+.mallearn__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mallearn__text--left {
+  padding-bottom: 15px;
+}
+
+.mallearn__right {
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 1220px) {
+  .mallearn__right {
+    width: 100%;
+  }
+}
+
+.mallearn__heading {
+  font-size: 20px;
+  color: #E35471;
+  font-weight: 500;
+}
+
+.contact .contact__category--email, .contact .contact__category--form, .contact .contact__category--tel, .sns__acount, .sns__tweets, .philosophy__item, .feature__item, .troubles__situation, .mallearn__feature, .mallearnPricing {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2) inset;
+  background: #fff;
+}
+
+.mallearnPricing {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.mallearnPricing__title {
+  color: #E35471;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.mallearnPricing__text {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=styles.css.map */
