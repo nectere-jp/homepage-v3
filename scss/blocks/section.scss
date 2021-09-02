@@ -9,11 +9,29 @@
 }
 .section {
   @extend %section;
-  &__subheading {
-    display: block;
-    padding-left: 4px;
-    font-size: 20px;
-    font-weight: 600;
+  &--trouble {
+    @extend %section;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 60px calc((100vw - 1080px) / 2);
+    background: $pink;
+    @include md {padding: 60px calc((100vw - 600px) / 2)}
+    @include sm {padding: 60px calc((100vw - 310px) / 2)}
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 100%);
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 175px 0 175px;
+      border-color: $pink transparent transparent transparent;
+    }
   }
   &__heading {
     position: relative;
@@ -56,6 +74,7 @@
       border: 3px solid #fff;
       font-size: 36px;
       font-weight: 900;
+      @include sm {max-width: 100%; font-size: 25px; padding: 10px 15px;}
     }
     &Image {
       width: 330px;
@@ -70,29 +89,19 @@
       text-align: center;
       filter: drop-shadow(0 3px 3px rgba(#000, .2));
       @include md {font-size: 45px;}
+      @include sm {font-size: 30px; margin: 95px 0 40px;}
     }
   }
-  &--trouble {
-    @extend %section;
-    position: relative;
-    width: 100vw;
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 60px calc((100vw - 1080px) / 2);
-    background: $pink;
-    @include md {padding: 60px calc((100vw - 600px) / 2)}
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      transform: translate(-50%, 100%);
-      display: block;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 50px 175px 0 175px;
-      border-color: $pink transparent transparent transparent;
+  &__subheading {
+    display: block;
+    padding-left: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    @include sm {font-size: 13px;}
+  }
+  &__headingText {
+    &--right {
+      @include sm {display: inline-block; width: 100%; text-align: right;}
     }
   }
 }

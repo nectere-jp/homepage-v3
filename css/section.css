@@ -16,11 +16,39 @@
   }
 }
 
-.section__subheading {
+.section--trouble {
+  position: relative;
+  width: 100vw;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 60px calc((100vw - 1080px) / 2);
+  background: #E35471;
+}
+
+@media screen and (max-width: 1220px) {
+  .section--trouble {
+    padding: 60px calc((100vw - 600px) / 2);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section--trouble {
+    padding: 60px calc((100vw - 310px) / 2);
+  }
+}
+
+.section--trouble::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
   display: block;
-  padding-left: 4px;
-  font-size: 20px;
-  font-weight: 600;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 175px 0 175px;
+  border-color: #E35471 transparent transparent transparent;
 }
 
 .section__heading {
@@ -85,6 +113,14 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 650px) {
+  .section__heading--trouble {
+    max-width: 100%;
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+}
+
 .section__headingImage {
   width: 330px;
   margin-bottom: 15px;
@@ -112,32 +148,31 @@
   }
 }
 
-.section--trouble {
-  position: relative;
-  width: 100vw;
-  margin: 0;
-  margin-bottom: 50px;
-  padding: 60px calc((100vw - 1080px) / 2);
-  background: #E35471;
-}
-
-@media screen and (max-width: 1220px) {
-  .section--trouble {
-    padding: 60px calc((100vw - 600px) / 2);
+@media screen and (max-width: 650px) {
+  .section__heading--mallearn {
+    font-size: 30px;
+    margin: 95px 0 40px;
   }
 }
 
-.section--trouble::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 100%);
+.section__subheading {
   display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 175px 0 175px;
-  border-color: #E35471 transparent transparent transparent;
+  padding-left: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .section__subheading {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__headingText--right {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+  }
 }
 /*# sourceMappingURL=section.css.map */

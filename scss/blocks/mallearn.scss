@@ -10,8 +10,8 @@
     align-items: center;
     gap: 45px;
     padding: 40px 45px;
-    @include md {
-      flex-direction: column;}
+    @include md {flex-direction: column;}
+    @include sm {padding: 40px 25px;}
   }
   &__left {
     width: 370px;
@@ -22,6 +22,7 @@
     clear: left;
     font-size: 32px;
     font-weight: 600;
+    @include sm {font-size: 28px;}
   }
   %text {
     margin: 5px 0;
@@ -45,5 +46,6 @@
     font-size: 20px;
     color: $pink;
     font-weight: 500;
+    @include sm {font-size: 18px;}
   }
 }

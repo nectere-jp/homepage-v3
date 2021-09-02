@@ -47,9 +47,9 @@
   &__text {
     display: block;
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.5;
     margin-top: 10px;
-    @include sm {font-size: 14px;}
+    @include sm {font-size: 13px;}
   }
 }

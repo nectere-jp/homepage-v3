@@ -23,6 +23,12 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .mallearn__feature {
+    padding: 40px 25px;
+  }
+}
+
 .mallearn__left {
   width: 370px;
   flex-shrink: 0;
@@ -38,6 +44,12 @@
   clear: left;
   font-size: 32px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .mallearn__title {
+    font-size: 28px;
+  }
 }
 
 .mallearn .mallearn__text, .mallearn .mallearn__text--left {
@@ -69,5 +81,11 @@
   font-size: 20px;
   color: #E35471;
   font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+  .mallearn__heading {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=mallearn.css.map */

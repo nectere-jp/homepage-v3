@@ -36,7 +36,12 @@
           &__balloonContainer {align-items: flex-start}
           &__balloon {@include balloon-right;}}}
       @include md {.troubles__balloonContainer {justify-items: right;}}
+      @include sm {.troubles__balloonContainer {justify-items: left;}}
     }
+    @include sm {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 15px;}
   }
   
   &__situation {
@@ -52,6 +57,7 @@
       width: 120px;
       justify-content: center;
       margin: 0 auto;}
+    @include sm {margin-left: 0; width: 100%; height: calc(100% - 28px);}
   }
   &__situationText {
     position: absolute;
@@ -64,7 +70,7 @@
     text-align: center;
     @include md {
       color: #fff;
-      bottom: -20px;}
+      bottom: -25px;}
   }
 
   &__balloonContainer {
@@ -81,8 +87,8 @@
       align-items: center;
       gap: 10px 140px;
       width: 100%;
-      height: 100%;
-    }
+      height: 100%;}
+    @include sm {position: static; grid-template-columns: 100%; transform: none;}
   }
   &__balloon {
     position: relative;
@@ -91,10 +97,13 @@
     padding-right: 30px;
     border-radius: 3px;
     cursor: pointer;
-    @include md {
+    @include onlyMd {
       &:nth-of-type(odd) {@include balloon-left;}
       &:nth-of-type(even) {@include balloon-right;}
     }
+    @include sm {
+      @include balloon-right;
+      font-size: 12px;}
     &::after {
       position: absolute;
       top: 50%;

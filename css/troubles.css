@@ -64,6 +64,20 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .troubles__item:nth-child(even) .troubles__balloonContainer {
+    justify-items: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .troubles__item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 15px;
+  }
+}
+
 .troubles__situation {
   position: relative;
   display: flex;
@@ -82,6 +96,14 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .troubles__situation {
+    margin-left: 0;
+    width: 100%;
+    height: calc(100% - 28px);
+  }
+}
+
 .troubles__situationText {
   position: absolute;
   left: 0;
@@ -96,7 +118,7 @@
 @media screen and (max-width: 1220px) {
   .troubles__situationText {
     color: #fff;
-    bottom: -20px;
+    bottom: -25px;
   }
 }
 
@@ -121,6 +143,14 @@
   }
 }
 
+@media screen and (max-width: 650px) {
+  .troubles__balloonContainer {
+    position: static;
+    grid-template-columns: 100%;
+    transform: none;
+  }
+}
+
 .troubles__balloon {
   position: relative;
   background: #fff;
@@ -130,7 +160,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px) and (min-width: 651px) {
   .troubles__balloon:nth-of-type(odd) {
     margin-right: 20px;
   }
@@ -142,6 +172,17 @@
     margin-left: 20px;
   }
   .troubles__balloon:nth-of-type(even)::before {
+    left: 0;
+    transform: translate(-100%, -50%) rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .troubles__balloon {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+  .troubles__balloon::before {
     left: 0;
     transform: translate(-100%, -50%) rotate(180deg);
   }

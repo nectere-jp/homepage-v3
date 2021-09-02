@@ -71,14 +71,14 @@
 .eyecatch__text {
   display: block;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 650px) {
   .eyecatch__text {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=eyecatch.css.map */
