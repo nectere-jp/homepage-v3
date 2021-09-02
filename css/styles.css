@@ -1282,6 +1282,7 @@ body {
 @media screen and (max-width: 650px) {
   .button {
     padding-right: 70px;
+    font-size: 15px;
   }
 }
 
@@ -2576,5 +2577,52 @@ body {
 
 .mallearnPricing__text {
   margin-top: 10px;
+}
+
+.band {
+  background: #E35471;
+  padding: 90px 0;
+  margin: 40px 0 60px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+.band__title {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+}
+
+@media screen and (max-width: 1220px) {
+  .band__title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .band__title {
+    font-size: 30px;
+  }
+}
+
+.band__buttonContainer {
+  display: flex;
+  gap: 15px;
+  width: 1080px;
+  margin: 30px auto 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .band__buttonContainer {
+    width: 600px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .band__buttonContainer {
+    width: 310px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

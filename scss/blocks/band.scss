@@ -1,0 +1,25 @@
+@import "../common/color.scss", "../common/breakpoints.scss";
+
+.band {
+  background: $pink;
+  padding: 90px 0;
+  margin: 40px 0 60px;
+  box-shadow: 0 0 6px rgba(#000, .2) inset;
+  &__title {
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(0 3px 3px rgba(#000, .2));
+    @include md {font-size: 45px;}
+    @include sm {font-size: 30px;}
+  }
+  &__buttonContainer {
+    display: flex;
+    gap: 15px;
+    width: $lg;
+    margin: 30px auto 0;
+    @include md {width: $md; flex-direction: column;}
+    @include sm {width: $sm;}
+  }
+}
