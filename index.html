@@ -32,12 +32,14 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <a href="/">
-        <img 
-          src="images/logo-white.png"
-          alt="Nectere"
-          class="header__logo"
-        >
+      <a href="./">
+        <picture>
+          <source srcset="./images/logo-white.png.webp">
+          <img
+            class="header__logo"
+            src="./images/logo-white.png"
+            alt="Nectere">
+        </picture>
       </a>
     </div>
     <nav class="header__right" id="burgerMenu">
@@ -54,7 +56,13 @@
     </div>
   </header>
   <section class="eyecatch">
-    <img class="eyecatch__image" src="./images/eyecatch-home.png" alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
+    <picture>
+      <source srcset="./images/eyecatch-home.jpg.webp">
+      <img
+        class="eyecatch__image"
+        src="./images/eyecatch-home.jpg"
+        alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
+    </picture>
     <div class="eyecatch__filter"></div>
     <h1 class="eyecatch__title">
       <span class="nowrap">若者と大人が</span>
@@ -68,10 +76,13 @@
       <div class="cardList">
         <div class="cardList__item">
           <div class="cardList__card--image">
-            <img
-              class="cardList__image"
-              src="./images/webdevelop.png"
-              alt="ウェブサイト制作">
+            <picture>
+              <source srcset="./images/webdevelop.png.webp">
+              <img
+                class="cardList__image"
+                src="./images/webdevelop.png"
+                alt="webサイト制作">
+            </picture>
             </div>
           <div class="cardList__card--content">
             <p class="cardList__number">01</p>
@@ -91,18 +102,25 @@
         </div>
         <div class="cardList__item">
           <div class="cardList__card--image">
-            <img
-              class="cardList__image"
-              src="./images/reading.png"
-              alt="読書">
+            <picture>
+              <source srcset="./images/reading.png.webp">
+              <img
+                class="cardList__image"
+                src="./images/reading.png"
+                alt="読書">
+            </picture>
+              
           </div>
           <div class="cardList__card--content">
             <p class="cardList__number">02</p>
             <h2 class="cardList__title--withIcon">
-              <img
-                class="cardList__icon" 
-                src="./images/mallearn.png"
-                alt="Mal Learn">
+              <picture>
+                <source srcset="./images/mallearn.jpg.webp">
+                <img
+                  class="cardList__icon"
+                  src="./images/mallearn.jpg"
+                  alt="Mal Learn">
+              </picture>
               <span class="cardList__subtitle">話そう。教え合おう。</span>
               Mal Learn
             </h2>
@@ -145,10 +163,13 @@
       </div>
       <div class="sdgs">
         <h1 class="sdgs__heading">
-          <img 
-            class="sdgs__headingImage"
-            src="./images/sdgs.png" 
-            alt="SUSTAINABLE DEVELOPMENT GOALS">
+          <picture>
+            <source srcset="./images/sdgs.png.webp">
+            <img
+              class="sdgs__headingImage"
+              src="./images/sdgs.png"
+              alt="SUSTAINABLE DEVELOPMENT GOALS">
+          </picture>
           <span class="sdgs__headingText">私たちは持続的な開発目標を支援しています。</soan>
         </h1>
         <div class="sdgs__grid">
@@ -157,54 +178,84 @@
             alt="4. 質の高い教育をみんなに" 
             class="sdgs__goal--square">
           <div class="sdgs__goal--4">
-            <img 
-              class="sdgs__goalText"
-              src="images/sdgs4-text.png"
-              alt="4. 質の高い教育をみんなに">
-            <img 
-            class="sdgs__goalImage"
-            src="images/sdgs4-image.png"
-            alt="4. 質の高い教育をみんなに">
+            <picture>
+              <source srcset="./images/sdgs4-image.png.webp">
+              <img
+                class="sdgs__goalImage"
+                src="./images/sdgs4-image.png"
+                alt="4. 質の高い教育をみんなに">
+            </picture>
+            <picture>
+              <source srcset="./images/sdgs4-text.png.webp">
+              <img
+                class="sdgs__goalText"
+                src="./images/sdgs4-text.png"
+                alt="4. 質の高い教育をみんなに">
+            </picture>
           </div>
           <div class="sdgs__goal--1">
-            <img 
-              class="sdgs__goalText"
-              src="images/sdgs1-text.png"
-              alt="1. 貧困をなくそう">
-            <img 
-            class="sdgs__goalImage"
-            src="images/sdgs1-image.png"
-            alt="1. 貧困をなくそう">
+            <picture>
+              <source srcset="./images/sdgs1-image.png.webp">
+              <img
+                class="sdgs__goalImage"
+                src="./images/sdgs1-image.png"
+                alt="1. 貧困を無くそう">
+            </picture>
+            <picture>
+              <source srcset="./images/sdgs1-text.png.webp">
+              <img
+                class="sdgs__goalText"
+                src="./images/sdgs1-text.png"
+                alt="1. 貧困を無くそう">
+            </picture>
           </div>
           <div class="sdgs__goal--3">
-            <img 
-              class="sdgs__goalText"
-              src="images/sdgs3-text.png"
-              alt="3. 全ての人に健康と福祉を">
-            <img 
-            class="sdgs__goalImage"
-            src="images/sdgs3-image.png"
-            alt="3. 全ての人に健康と福祉を">
+            <picture>
+              <source srcset="./images/sdgs3-image.png.webp">
+              <img
+                class="sdgs__goalImage"
+                src="./images/sdgs3-image.png"
+                alt="3.全ての人に健康と福祉を">
+            </picture>
+            <picture>
+              <source srcset="./images/sdgs3-text.png.webp">
+              <img
+                class="sdgs__goalText"
+                src="./images/sdgs3-text.png"
+                alt="3.全ての人に健康と福祉を">
+            </picture>
           </div>
           <div class="sdgs__goal--5">
-            <img 
-              class="sdgs__goalText"
-              src="images/sdgs5-text.png"
-              alt="5. ジェンダー平等を実現しよう">
-            <img 
-            class="sdgs__goalImage"
-            src="images/sdgs5-image.png"
-            alt="5. ジェンダー平等を実現しよう">
+            <picture>
+              <source srcset="./images/sdgs5-image.png.webp">
+              <img
+                class="sdgs__goalImage"
+                src="./images/sdgs5-image.png"
+                alt="5. ジェンダー平等を実現しよう">
+            </picture>
+            <picture>
+              <source srcset="./images/sdgs5-text.png.webp">
+              <img
+                class="sdgs__goalText"
+                src="./images/sdgs5-text.png"
+                alt="5. ジェンダー平等を実現しよう">
+            </picture>
           </div>
           <div class="sdgs__goal--10">
-            <img 
-              class="sdgs__goalText"
-              src="images/sdgs10-text.png"
-              alt="10. 人や国の不平等をなくそう">
-            <img 
-            class="sdgs__goalImage"
-            src="images/sdgs10-image.png"
-            alt="10. 人や国の不平等をなくそう">
+            <picture>
+              <source srcset="./images/sdgs10-image.png.webp">
+              <img
+                class="sdgs__goalImage"
+                src="./images/sdgs10-image.png"
+                alt="10. 人や国の不平等を無くそう">
+            </picture>
+            <picture>
+              <source srcset="./images/sdgs10-text.png.webp">
+              <img
+                class="sdgs__goalText"
+                src="./images/sdgs10-text.png"
+                alt="10. 人や国の不平等を無くそう">
+            </picture>
           </div>
         </div>
       </div>
@@ -213,10 +264,13 @@
       <h1 class="section__heading" data-english="Founding Members">創業メンバー</h1>
       <div class="members">
         <div class="members__card">
-          <img 
-            class="members__image"
-            src="./images/takahiro.png"
-            alt="養田貴大">
+          <picture>
+            <source srcset="./images/takahiro.jpg.webp">
+            <img
+              class="members__image"
+              src="./images/takahiro.jpg"
+              alt="養田貴大">
+          </picture>
           <p class="members__note">
             I ♡ Positive
           </p>
@@ -246,10 +300,13 @@
           </div>
         </div>
         <div class="members__card">
-          <img 
-            class="members__image"
-            src="./images/takahiro.png"
-            alt="養田貴大">
+          <picture>
+            <source srcset="./images/takahiro.jpg.webp">
+            <img
+              class="members__image"
+              src="./images/takahiro.jpg"
+              alt="養田貴大">
+          </picture>
           <p class="members__note">
             I ♡ Positive
           </p>
@@ -393,7 +450,13 @@
       <h1 class="section__heading" data-english="SNS accounts">公式SNS</h1>
       <div class="sns">
         <div class="sns__acount">
-          <img src="./images/twitter.png" alt="　Twitter　" class="sns__logo">
+          <picture>
+            <source srcset="./images/twitter.png.webp">
+            <img
+              class="sns__logo"
+              src="./images/twitter.png"
+              alt="Twitter">
+          </picture>
           <p class="sns__id">@Nectere__jp</p>
         </div>
         <div class="sns__tweets">
@@ -403,10 +466,13 @@
     </section>
   </main>
   <footer class="footer">
-    <img 
-      class="footer__logo"
-      src="./images/logo.png"
-      alt="Nectere">
+    <picture>
+      <source srcset="./images/logo.png.webp">
+      <img
+        class="footer__logo"
+        src="./images/logo.png"
+        alt="Nectere">
+    </picture>
     <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
   </footer>
   <script src="./js/script.js"></script>
