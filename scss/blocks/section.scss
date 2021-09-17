@@ -2,7 +2,8 @@
 
 %section {
   width: $lg;
-  margin: 0 auto;
+  margin: -40px auto 0;
+  padding-top: 40px;
   padding-bottom: 30px;
   @include md {width: $md;}
   @include sm {width: $sm;}

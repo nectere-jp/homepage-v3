@@ -4,11 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  gap: 30px;
   @include md {
     flex-direction: column;
     gap: 15px;
   }
   &__card {
+    flex-grow: 1;
     position: relative;
     width: 335px;
     border-radius: 10px;

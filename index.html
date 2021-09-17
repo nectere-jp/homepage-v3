@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- adobe fonts -->
   <script>
     (function(d) {
       var config = {
@@ -13,15 +11,28 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
-  </script>
-  <!-- <?php wp_head(); ?> -->
+    </script>
+  <!-- styles -->
   <link rel="stylesheet" href="./css/styles.css">
-  <!-- <link rel="stylesheet" href="./css/contact.css"> -->
+  
+  <title>Nectere</title>
+  <meta content="" name="description"> <!-- !概要文 120字 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta property="og:title" content="Nectere">
+  <meta property="og:description" content=""> <!-- !概要文 90字 -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://nectere.jp/">
+  <meta property="og:image" content="https://nectere.jp/images/ogp/top.png">
+  <meta property="og:site_name" content="Nectere">
+  <meta property="og:locale" content="ja_JP">
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
 </head>
 <body>
   <header class="header">
     <div class="header__left">
-      <a>
+      <a href="/">
         <img 
           src="images/logo-white.png"
           alt="Nectere"
@@ -30,10 +41,10 @@
       </a>
     </div>
     <nav class="header__right" id="burgerMenu">
-      <a class="header__link" href="#servicies" data-english="Servicies">事業概要</a>
-      <a class="header__link" href="#philosophy" data-english="Philosophy">私たちの理念</a>
-      <a class="header__link" href="" data-english="News">ニュース</a>
-      <a class="header__link--contact" href="" data-english="Contact">お問い合わせ</a>
+      <a class="header__link" href="/#servicies" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="/#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="/news.html" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="/contact.html" data-english="Contact">お問い合わせ</a>
     </nav>
     <div class="header__filter" id="burgerFilter"></div>
     <div class="header__burgerContainer" id="burgerButton">
@@ -41,7 +52,6 @@
       <div class="header__burger--2" id="burgerBar2"></div>
       <div class="header__burger--3" id="burgerBar3"></div>
     </div>
-    
   </header>
   <section class="eyecatch">
     <img class="eyecatch__image" src="./images/eyecatch-home.png" alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
@@ -72,7 +82,7 @@
             <p class="cardList__text">
               デザインからコーディング、サーバーへのアップロードまで一貫した体制で対応いたします。
             </p>
-            <a href="" class="button">
+            <a href="/web-order.html" class="button">
               <span class="nowrap">Webアプリ, </span>
               <span class="nowrap"> ホームページ制作事業</span>
               <div class="button__decoration--blue"></div>
@@ -99,7 +109,7 @@
             <p class="cardList__text">
               日本国民は、正当に選挙された国会における代表者を通じて行動し、われらとわれらの子孫のために、諸国民との協和による成果と、わが国全土にわたつて自由のもたらす恵沢を確保する。
             </p>
-            <a href="" class="button">
+            <a href="/mallearn.html" class="button">
               Mal Learn
               <div class="button__decoration--blue"></div>
             </a>
@@ -216,7 +226,7 @@
               <span data-ruby="たかひろ">貴大</span>
             </p>
             <p class="members__position">
-              Chief Exective Officer
+              代表
             </p>
             <p class="members__message">
               <span class="nowrap">われら合衆国の国民は、</span>
@@ -236,6 +246,39 @@
           </div>
         </div>
         <div class="members__card">
+          <img 
+            class="members__image"
+            src="./images/takahiro.png"
+            alt="養田貴大">
+          <p class="members__note">
+            I ♡ Positive
+          </p>
+          <div class="members__content">
+            <p class="members__name">
+              <span data-ruby="なかむら">中村</span>
+              <span data-ruby="りゅうと">龍人</span>
+            </p>
+            <p class="members__position">
+              副代表
+            </p>
+            <p class="members__message">
+              <span class="nowrap">われら合衆国の国民は、</span>
+              <span class="nowrap">より完全な連邦を形成し、</span>
+              <span class="nowrap">正義を樹立し、</span>
+              <span class="nowrap">国内の平穏を保障し、</span>
+              <span class="nowrap">共同の防衛に備え、</span>
+              <span class="nowrap">一般の福祉を増進し、</span>
+              <span class="nowrap">われらと</span>
+              <span class="nowrap">われらの子孫のために</span>
+              <span class="nowrap">自由の恵沢を確保する目的をもって、</span>
+              <span class="nowrap">ここに</span>
+              <span class="nowrap">アメリカ合衆国のために</span>
+              <span class="nowrap">この憲法を制定し、</span>
+              <span class="nowrap">確定する。</span>
+            </p>
+          </div>
+        </div>
+        <!-- <div class="members__card">
           <img 
             class="members__image"
             src="./images/takahiro.png"
@@ -267,48 +310,15 @@
               <span class="nowrap">確定する。</span>
             </p>
           </div>
-        </div>
-        <div class="members__card">
-          <img 
-            class="members__image"
-            src="./images/takahiro.png"
-            alt="養田貴大">
-          <p class="members__note">
-            I ♡ Positive
-          </p>
-          <div class="members__content">
-            <p class="members__name">
-              <span data-ruby="ようだ">養田</span>
-              <span data-ruby="たかひろ">貴大</span>
-            </p>
-            <p class="members__position">
-              Chief Exective Officer
-            </p>
-            <p class="members__message">
-              <span class="nowrap">われら合衆国の国民は、</span>
-              <span class="nowrap">より完全な連邦を形成し、</span>
-              <span class="nowrap">正義を樹立し、</span>
-              <span class="nowrap">国内の平穏を保障し、</span>
-              <span class="nowrap">共同の防衛に備え、</span>
-              <span class="nowrap">一般の福祉を増進し、</span>
-              <span class="nowrap">われらと</span>
-              <span class="nowrap">われらの子孫のために</span>
-              <span class="nowrap">自由の恵沢を確保する目的をもって、</span>
-              <span class="nowrap">ここに</span>
-              <span class="nowrap">アメリカ合衆国のために</span>
-              <span class="nowrap">この憲法を制定し、</span>
-              <span class="nowrap">確定する。</span>
-            </p>
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="section" id="company">
-      <h1 class="section__heading" data-english="Company">会社概要</h1>
+      <h1 class="section__heading" data-english="Overview">団体概要</h1>
       <table class="table">
         <tr class="table__row">
-          <th class="table__heding">会社名</th>
-          <td class="table__data">合同会社Nectere</td>
+          <th class="table__heding">団体名</th>
+          <td class="table__data">Nectere</td>
         </tr>
         <tr class="table__row">
           <th class="table__heding">代表者</th>
@@ -323,23 +333,23 @@
         </tr>
         <tr class="table__row">
           <th class="table__heding">設立年月</th>
-          <td class="table__data">2021年9月</td>
+          <td class="table__data">2021年3月</td>
         </tr>
         <tr class="table__row">
           <th class="table__heding">事業内容</th>
           <td class="table__data">
-            <span class="nowrap">ホームページ制作代行,</span>
+            <!-- <span class="nowrap">ホームページ制作代行,</span> -->
             <span class="nowrap">オンライン学習サービス提供</span>
           </td>
         </tr>
         <tr class="table__row">
-          <th class="table__heding">従業員数</th>
+          <th class="table__heding">メンバー数</th>
           <td class="table__data">4人（2021年9月時点）</td>
         </tr>
-        <tr class="table__row">
+        <!-- <tr class="table__row">
           <th class="table__heding">資本金</th>
           <td class="table__data">1,000,000円</td>
-        </tr>
+        </tr> -->
       </table>
     </section>
     <section class="section" id="contact">
@@ -351,10 +361,10 @@
             <p class="contact__colon">：</p>
             <p class="contact__adress">contact@nectere.jp</p>
           </div>
-          <a class="button--sm">
+          <!-- <a class="button--sm">
             メールアドレスをコピー
             <div class="button--sm__decoration--pink"></div>
-          </a>
+          </a> -->
           <a class="button--sm" href="mailto:contact@nectere.jp">
             メールアプリを開く
             <div class="button--sm__decoration--pink"></div>
@@ -364,7 +374,7 @@
           <div class="contact__container">
             <h2 class="contact__title" data-english="Through the contact Form">フォームから</h2>
             <p class="contact__colon">：</p>
-            <a href="" class="button--sm">
+            <a href="/contact.html" class="button--sm">
               お問い合わせフォーム
               <div class="button--sm__decoration--pink"></div>
             </a>

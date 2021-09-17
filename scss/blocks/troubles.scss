@@ -94,9 +94,9 @@
     position: relative;
     background: #fff;
     padding: 10px 15px;
-    padding-right: 30px;
+    // padding-right: 30px;
     border-radius: 3px;
-    cursor: pointer;
+    // cursor: pointer;
     @include onlyMd {
       &:nth-of-type(odd) {@include balloon-left;}
       &:nth-of-type(even) {@include balloon-right;}
@@ -104,18 +104,18 @@
     @include sm {
       @include balloon-right;
       font-size: 12px;}
-    &::after {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      content: "";
-      display: block;
-      width: 16px;
-      height: 16px;
-      background-image: url("../../images/arrow.png");
-      background-size: contain
-    }
+    // &::after {
+    //   position: absolute;
+    //   top: 50%;
+    //   right: 10px;
+    //   transform: translateY(-50%);
+    //   content: "";
+    //   display: block;
+    //   width: 16px;
+    //   height: 16px;
+    //   background-image: url("../../images/arrow.png");
+    //   background-size: contain
+    // }
     &::before {
       position: absolute;
       top: 50%;

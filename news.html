@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- adobe fonts -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'quf1pqd',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <a href="/">
+        <img 
+          src="images/logo-white.png"
+          alt="Nectere"
+          class="header__logo"
+        >
+      </a>
+    </div>
+    <nav class="header__right" id="burgerMenu">
+      <a class="header__link" href="#servicies" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="" data-english="Contact">お問い合わせ</a>
+    </nav>
+    <div class="header__filter" id="burgerFilter"></div>
+    <div class="header__burgerContainer" id="burgerButton">
+      <div class="header__burger--1" id="burgerBar1"></div>
+      <div class="header__burger--2" id="burgerBar2"></div>
+      <div class="header__burger--3" id="burgerBar3"></div>
+    </div>
+  </header>
+  <section class="section" id="preparing">
+    <div class="preparing">
+      <img src="./images/not-found.png" alt="sorry" class="preparing__image">
+      <h1 class="preparing__text">
+        <span class="nowrap">申し訳ございません。</span>
+        <span class="nowrap">このページは現在準備中です。</span>
+      </h1>
+    </div>
+  </section>
+  <footer class="footer">
+    <img 
+      class="footer__logo"
+      src="./images/logo.png"
+      alt="Nectere">
+    <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
+</html>

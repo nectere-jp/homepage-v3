@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  gap: 30px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -12,6 +13,7 @@
 }
 
 .members__card {
+  flex-grow: 1;
   position: relative;
   width: 335px;
   border-radius: 10px;

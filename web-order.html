@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- adobe fonts -->
   <script>
     (function(d) {
       var config = {
@@ -14,15 +15,13 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
   </script>
-  <!-- <?php wp_head(); ?> -->
+  <!-- styles -->
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/feature.css">
-  <link rel="stylesheet" href="./css/plan.css">
 </head>
 <body>
   <header class="header">
     <div class="header__left">
-      <a>
+      <a href="/">
         <img 
           src="images/logo-white.png"
           alt="Nectere"
@@ -42,7 +41,6 @@
       <div class="header__burger--2" id="burgerBar2"></div>
       <div class="header__burger--3" id="burgerBar3"></div>
     </div>
-    
   </header>
   <section class="eyecatch">
     <img class="eyecatch__image" src="./images/eyecatch-home.png" alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
@@ -71,7 +69,7 @@
           <p class="feature__text">
             <span class="nowrap">Nectereは、</span><span class="nowrap">主体性を</span><span class="nowrap">大切にした</span><span class="nowrap">学習アプリ</span><span class="nowrap">「Mal Learn」を</span><span class="nowrap">開発しています。</span><span class="nowrap">Nectereに</span><span class="nowrap">ホームページ制作を</span><span class="nowrap">依頼することで</span><span class="nowrap">Mal Learnの</span><span class="nowrap">開発を</span><span class="nowrap">応援することが</span><span class="nowrap">できます。</span>
           </p>
-          <a href="" class="button--sm">
+          <a href="./mallearn.html" class="button--sm">
             Mal Learnを詳しく見る
             <div class="button__decoration--blue"></div>
           </a>
@@ -102,7 +100,7 @@
           <p class="feature__text">
             <span class="nowrap">丸投げして</span><span class="nowrap">いただくことも、</span><span class="nowrap">丁寧に</span><span class="nowrap">イメージを</span><span class="nowrap">すり合わせ</span><span class="nowrap">ながら</span><span class="nowrap">制作することも</span><span class="nowrap">可能です。</span>
           </p>
-          <a href="" class="button--sm">
+          <a href="./web-order_flow.html" class="button--sm">
             制作の流れを見る
             <div class="button__decoration--blue"></div>
           </a>
@@ -233,10 +231,10 @@
             <p class="contact__colon">：</p>
             <p class="contact__adress">contact@nectere.jp</p>
           </div>
-          <a class="button--sm">
+          <!-- <a class="button--sm">
             メールアドレスをコピー
             <div class="button--sm__decoration--pink"></div>
-          </a>
+          </a> -->
           <a class="button--sm" href="mailto:contact@nectere.jp">
             メールアプリを開く
             <div class="button--sm__decoration--pink"></div>
@@ -246,7 +244,7 @@
           <div class="contact__container">
             <h2 class="contact__title" data-english="Through the contact Form">フォームから</h2>
             <p class="contact__colon">：</p>
-            <a href="" class="button--sm">
+            <a href="/contact.html" class="button--sm">
               お問い合わせフォーム
               <div class="button--sm__decoration--pink"></div>
             </a>

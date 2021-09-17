@@ -22,6 +22,7 @@
         &__card {
           &--image {
             align-self: flex-end;
+            z-index: 10;
           }
           &--content {
             align-self: flex-start;
@@ -34,7 +35,7 @@
         &__title,
         &__title--withIcon,
         &__text {
-          @include md {margin-right: 0; margin-left: 100px;}
+          @include md {margin-right: 0; margin-left: 75px;}
           @include sm {margin-left: 0;}
         }
       }
@@ -68,7 +69,7 @@
       background: $pink;
       align-self: flex-end;
       margin: -40px 0;
-      z-index: -1;
+      // z-index: -1;
       @include md {
         width: 100%;
         margin: 10px 0;
@@ -86,7 +87,7 @@
     top: 45px;
     right: 45px;
     transform: rotate(90deg);
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 200;
     color: #fff;
     @include sm {
@@ -102,11 +103,11 @@
       content: "";
       display: block;
       width: 150px;
-      height: 2px;
+      height: 1px;
       background: #fff;
       @include md {
-        right: -105px;
-        width: 100px;}
+        right: -85px;
+        width: 80px;}
       @include sm {
         display: none;}
     }
@@ -149,7 +150,8 @@
   }
   &__text {
     margin: 8px 0 25px;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 16px;
     font-weight: 200;
     line-height: 1.4;
     color: #fff;

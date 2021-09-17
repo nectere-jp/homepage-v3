@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,GAAG;CACf",
+    "sources": [
+        "../scss/blocks/note.scss"
+    ],
+    "names": [],
+    "file": "note.css"
+}
