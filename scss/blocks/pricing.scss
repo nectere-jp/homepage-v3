@@ -25,7 +25,8 @@
   }
   &__left {
     display: grid;
-    grid-template-rows: 100px 210px 70px 120px 70px 70px;
+    // grid-template-rows: 100px 210px 70px 120px 70px 70px;
+    grid-template-rows: 100px 210px 70px 120px 70px;
     @include md {display: none}
   }
   &__heading {
@@ -39,5 +40,9 @@
     display: block;
     font-size: 12px;
     font-weight: 400;
+  }
+  &__message {
+    text-align: center;
+    padding-bottom: 10px;
   }
 }

@@ -21,19 +21,21 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <a href="/">
-        <img 
-          src="images/logo-white.png"
-          alt="Nectere"
-          class="header__logo"
-        >
+      <a href="./">
+        <picture>
+          <source srcset="./images/logo-white.png.webp">
+          <img
+            class="header__logo"
+            src="./images/logo-white.png"
+            alt="Nectere">
+        </picture>
       </a>
     </div>
     <nav class="header__right" id="burgerMenu">
-      <a class="header__link" href="#servicies" data-english="Servicies">事業概要</a>
-      <a class="header__link" href="#philosophy" data-english="Philosophy">私たちの理念</a>
-      <a class="header__link" href="" data-english="News">ニュース</a>
-      <a class="header__link--contact" href="" data-english="Contact">お問い合わせ</a>
+      <a class="header__link" href="./#service" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="./#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="./news.html" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="./contact.html" data-english="Contact">お問い合わせ</a>
     </nav>
     <div class="header__filter" id="burgerFilter"></div>
     <div class="header__burgerContainer" id="burgerButton">
@@ -44,7 +46,13 @@
   </header>
   <section class="section" id="preparing">
     <div class="preparing">
-      <img src="./images/not-found.png" alt="sorry" class="preparing__image">
+      <picture>
+        <source srcset="./images/not-found.png.webp">
+        <img
+          class="footer__logo"
+          src="./images/not-found.png"
+          alt="sorry">
+      </picture>
       <h1 class="preparing__text">
         <span class="nowrap">申し訳ございません。</span>
         <span class="nowrap">このページは現在準備中です。</span>
@@ -52,10 +60,13 @@
     </div>
   </section>
   <footer class="footer">
-    <img 
-      class="footer__logo"
-      src="./images/logo.png"
-      alt="Nectere">
+    <picture>
+      <source srcset="./images/logo.png.webp">
+      <img
+        class="footer__logo"
+        src="./images/logo.png"
+        alt="Nectere">
+    </picture>
     <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
   </footer>
   <script src="./js/script.js"></script>

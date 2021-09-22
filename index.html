@@ -43,10 +43,10 @@
       </a>
     </div>
     <nav class="header__right" id="burgerMenu">
-      <a class="header__link" href="/#servicies" data-english="Servicies">事業概要</a>
-      <a class="header__link" href="/#philosophy" data-english="Philosophy">私たちの理念</a>
-      <a class="header__link" href="/news.html" data-english="News">ニュース</a>
-      <a class="header__link--contact" href="/contact.html" data-english="Contact">お問い合わせ</a>
+      <a class="header__link" href="./#service" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="./#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="./news.html" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="./contact.html" data-english="Contact">お問い合わせ</a>
     </nav>
     <div class="header__filter" id="burgerFilter"></div>
     <div class="header__burgerContainer" id="burgerButton">
@@ -173,10 +173,13 @@
           <span class="sdgs__headingText">私たちは持続的な開発目標を支援しています。</soan>
         </h1>
         <div class="sdgs__grid">
-          <img 
-            src="./images/sdgs4.png" 
-            alt="4. 質の高い教育をみんなに" 
-            class="sdgs__goal--square">
+          <picture class="sdgs__goal--squareContainer">
+            <source srcset="./images/sdgs4.png.webp">
+            <img
+              class="sdgs__goal--square"
+              src="./images/sdgs4.png"
+              alt="4. 質の高い教育をみんなに">
+          </picture>
           <div class="sdgs__goal--4">
             <picture>
               <source srcset="./images/sdgs4-image.png.webp">
@@ -319,37 +322,28 @@
               副代表
             </p>
             <p class="members__message">
-              <span class="nowrap">われら合衆国の国民は、</span>
-              <span class="nowrap">より完全な連邦を形成し、</span>
-              <span class="nowrap">正義を樹立し、</span>
-              <span class="nowrap">国内の平穏を保障し、</span>
-              <span class="nowrap">共同の防衛に備え、</span>
-              <span class="nowrap">一般の福祉を増進し、</span>
-              <span class="nowrap">われらと</span>
-              <span class="nowrap">われらの子孫のために</span>
-              <span class="nowrap">自由の恵沢を確保する目的をもって、</span>
-              <span class="nowrap">ここに</span>
-              <span class="nowrap">アメリカ合衆国のために</span>
-              <span class="nowrap">この憲法を制定し、</span>
-              <span class="nowrap">確定する。</span>
+              <span class="nowrap">私は中学生の頃、</span><span class="nowrap">とある高校生が</span><span class="nowrap">立ち上げた企業に</span><span class="nowrap">参加しました。</span><span class="nowrap">受験が終わった</span><span class="nowrap">直後だったこともあり、</span><span class="nowrap">自分いる世界が</span><span class="nowrap">とても小さく見えたことを、</span><span class="nowrap">今でも覚えています。</span><span class="nowrap">この経験から、</span><span class="nowrap">私は</span><span class="nowrap">「青年と大人の関わり」</span><span class="nowrap">に着目し、</span><span class="nowrap">Nectereを立ち上げました。</span><span class="nowrap">手探りの日々ですが、</span><span class="nowrap">Mal Learnの</span><span class="nowrap">完成に向けて</span><span class="nowrap">全力を尽くします。</span>
             </p>
           </div>
         </div>
-        <!-- <div class="members__card">
-          <img 
-            class="members__image"
-            src="./images/takahiro.png"
-            alt="養田貴大">
+        <div class="members__card">
+          <picture>
+            <source srcset="./images/takahiro.jpg.webp">
+            <img
+              class="members__image"
+              src="./images/takahiro.jpg"
+              alt="養田貴大">
+          </picture>
           <p class="members__note">
             I ♡ Positive
           </p>
           <div class="members__content">
             <p class="members__name">
-              <span data-ruby="ようだ">養田</span>
-              <span data-ruby="たかひろ">貴大</span>
+              <span data-ruby="うしじま">牛島</span>
+              <span data-ruby="しょうご">章悟</span>
             </p>
             <p class="members__position">
-              Chief Exective Officer
+              副代表
             </p>
             <p class="members__message">
               <span class="nowrap">われら合衆国の国民は、</span>
@@ -367,7 +361,7 @@
               <span class="nowrap">確定する。</span>
             </p>
           </div>
-        </div> -->
+        </div>
       </div>
     </section>
     <section class="section" id="company">
@@ -385,7 +379,7 @@
           <th class="table__heding">所在地</th>
           <td class="table__data">
             <span class="nowrap">〒156-0053</span>
-            <span class="nowrap">東京都世田谷区桜1-1-1</span>
+            <span class="nowrap">東京都世田谷区桜2-4-1-104</span>
           </td>
         </tr>
         <tr class="table__row">

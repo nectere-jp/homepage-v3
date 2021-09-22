@@ -122,6 +122,10 @@
   }
 }
 
+.troubles__situationImage {
+  width: 100%;
+}
+
 .troubles__balloonContainer {
   display: flex;
   flex-direction: column;

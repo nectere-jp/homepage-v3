@@ -68,7 +68,7 @@
 @media screen and (max-width: 1220px) {
   .cardList__item:nth-of-type(even) .cardList__title, .cardList__item:nth-of-type(even) .cardList__title--withIcon, .cardList__item:nth-of-type(even) .cardList__text {
     margin-right: 0;
-    margin-left: 80px;
+    margin-left: 75px;
   }
 }
 

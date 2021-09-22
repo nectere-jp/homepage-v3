@@ -21,19 +21,21 @@
 <body>
   <header class="header">
     <div class="header__left">
-      <a>
-        <img 
-          src="images/logo-white.png"
-          alt="Nectere"
-          class="header__logo"
-        >
+      <a href="./">
+        <picture>
+          <source srcset="./images/logo-white.png.webp">
+          <img
+            class="header__logo"
+            src="./images/logo-white.png"
+            alt="Nectere">
+        </picture>
       </a>
     </div>
     <nav class="header__right" id="burgerMenu">
-      <a class="header__link" href="#servicies" data-english="Servicies">事業概要</a>
-      <a class="header__link" href="#philosophy" data-english="Philosophy">私たちの理念</a>
-      <a class="header__link" href="" data-english="News">ニュース</a>
-      <a class="header__link--contact" href="" data-english="Contact">お問い合わせ</a>
+      <a class="header__link" href="./#service" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="./#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="./news.html" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="./contact.html" data-english="Contact">お問い合わせ</a>
     </nav>
     <div class="header__filter" id="burgerFilter"></div>
     <div class="header__burgerContainer" id="burgerButton">
@@ -41,10 +43,15 @@
       <div class="header__burger--2" id="burgerBar2"></div>
       <div class="header__burger--3" id="burgerBar3"></div>
     </div>
-    
   </header>
   <section class="eyecatch">
-    <img class="eyecatch__image" src="./images/eyecatch-home.png" alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
+    <picture>
+      <source srcset="./images/eyecatch-home.jpg.webp">
+      <img
+        class="eyecatch__image"
+        src="./images/eyecatch-home.jpg"
+        alt="若者と大人が一緒にチャレンジし、ともに成長できる社会へ。">
+    </picture>
     <div class="eyecatch__filter"></div>
     <h1 class="eyecatch__title">
       <span class="nowrap">話そう。教え合おう。</span>
@@ -66,7 +73,13 @@
       <div class="troubles">
         <div class="troubles__item">
           <div class="troubles__situation">
-            <img src="./images/studyAtSchool.png" alt="学校" class="troubles__situationImage">
+            <picture>
+              <source srcset="./images/studyAtSchool.png.webp">
+              <img
+                class="troubles__situationImage"
+                src="./images/studyAtSchool.png"
+                alt="学校">
+            </picture>
             <a class="troubles__situationText">学校で...</a>
           </div>
           <div class="troubles__balloonContainer">
@@ -76,7 +89,13 @@
         </div>
         <div class="troubles__item">
           <div class="troubles__situation">
-            <img src="./images/studyOnline.png" alt="学校" class="troubles__situationImage">
+            <picture>
+              <source srcset="./images/studyOnline.png.webp">
+              <img
+                class="troubles__situationImage"
+                src="./images/studyOnline.png"
+                alt="オンライン">
+            </picture>
             <a class="troubles__situationText">映像授業で...</a>
           </div>
           <div class="troubles__balloonContainer">
@@ -88,7 +107,13 @@
         </div>
         <div class="troubles__item">
           <div class="troubles__situation">
-            <img src="./images/studyAtJuku.png" alt="学校" class="troubles__situationImage">
+            <picture>
+              <source srcset="./images/studyAtJuku.png.webp">
+              <img
+                class="troubles__situationImage"
+                src="./images/studyAtJuku.png"
+                alt="塾">
+            </picture>
             <a class="troubles__situationText">塾で...</a>
           </div>
           <div class="troubles__balloonContainer">
@@ -99,7 +124,13 @@
         </div>
         <div class="troubles__item">
           <div class="troubles__situation">
-            <img src="./images/studyAtHome.png" alt="学校" class="troubles__situationImage">
+            <picture>
+              <source srcset="./images/studyAtHome.png.webp">
+              <img
+                class="troubles__situationImage"
+                src="./images/studyAtHome.png"
+                alt="自宅">
+            </picture>
             <a class="troubles__situationText">家で...</a>
           </div>
           <div class="troubles__balloonContainer">
@@ -189,10 +220,13 @@
     </div>
   </section>
   <footer class="footer">
-    <img 
-      class="footer__logo"
-      src="./images/logo.png"
-      alt="Nectere">
+    <picture>
+      <source srcset="./images/logo.png.webp">
+      <img
+        class="footer__logo"
+        src="./images/logo.png"
+        alt="Nectere">
+    </picture>
     <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
   </footer>
   <script src="./js/script.js"></script>

@@ -22,7 +22,8 @@
 
 .plan {
   display: grid;
-  grid-template-rows: 100px 210px 70px 120px 70px 70px;
+  // grid-template-rows: 100px 210px 70px 120px 70px 70px;
+  grid-template-rows: 100px 210px 70px 120px 70px;
   margin-left: -1px;
   background: #fff;
   @include md {
@@ -104,6 +105,7 @@
     background: $pink;
     &--disabled {
       @extend %tag;
+      background: #E3CCD1;
     }
   }
 }

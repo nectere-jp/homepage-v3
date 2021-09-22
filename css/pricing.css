@@ -27,7 +27,7 @@
 
 .pricing__left {
   display: grid;
-  grid-template-rows: 100px 210px 70px 120px 70px 70px;
+  grid-template-rows: 100px 210px 70px 120px 70px;
 }
 
 @media screen and (max-width: 1220px) {
@@ -44,5 +44,10 @@
   display: block;
   font-size: 12px;
   font-weight: 400;
+}
+
+.pricing__message {
+  text-align: center;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=pricing.css.map */

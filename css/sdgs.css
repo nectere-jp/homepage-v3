@@ -72,11 +72,14 @@
 
 .sdgs__goal--square {
   width: 100%;
+}
+
+.sdgs__goal--squareContainer {
   grid-row: 1/3;
 }
 
 @media screen and (max-width: 1220px) {
-  .sdgs__goal--square {
+  .sdgs__goal--squareContainer {
     display: none;
   }
 }

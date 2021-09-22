@@ -23,7 +23,7 @@
 
 .plan {
   display: grid;
-  grid-template-rows: 100px 210px 70px 120px 70px 70px;
+  grid-template-rows: 100px 210px 70px 120px 70px;
   margin-left: -1px;
   background: #fff;
 }
@@ -152,5 +152,9 @@
 
 .plan__tag {
   background: #E35471;
+}
+
+.plan__tag--disabled {
+  background: #E3CCD1;
 }
 /*# sourceMappingURL=plan.css.map */
