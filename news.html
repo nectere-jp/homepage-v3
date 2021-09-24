@@ -14,10 +14,51 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
-  </script>
+    </script>
   <!-- styles -->
   <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>ニュース｜Nectere
+  </title>
+  <meta content="Nectereは、「若者の活躍の弊害となる社会問題を解決する」という目的で設立された学生団体です。現在は、「Mal Learn」という今までにないオンライン学習支援サービスの開発と、ホームページ制作代行事業を行なっております。" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta property="og:title" content="ニュース">
+  <meta property="og:description" content="Nectereは、「若者の活躍の弊害となる社会問題を解決する」という目的で設立された学生団体です。現在は、「Mal Learn」という今までにないオンライン学習支援サービスの開発と、ホームページ制作代行事業を行なっております。">
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://nectere.jp/">
+  <meta property="og:image" content="https://nectere.jp/images/ogp/top.png">
+  <meta property="og:site_name" content="Nectere">
+  <meta property="og:locale" content="ja_JP">
+  <!-- <meta name="robots" content="noindex,nofollow"> -->
 </head>
+<body>
+  <header class="header">
+    <div class="header__left">
+      <a href="./">
+        <picture>
+          <source srcset="./images/logo-white.png.webp">
+          <img
+            class="header__logo"
+            src="./images/logo-white.png"
+            alt="Nectere">
+        </picture>
+      </a>
+    </div>
+    <nav class="header__right" id="burgerMenu">
+      <a class="header__link" href="./#service" data-english="Servicies">事業概要</a>
+      <a class="header__link" href="./#philosophy" data-english="Philosophy">私たちの理念</a>
+      <a class="header__link" href="./news.html" data-english="News">ニュース</a>
+      <a class="header__link--contact" href="./contact.html" data-english="Contact">お問い合わせ</a>
+    </nav>
+    <div class="header__filter" id="burgerFilter"></div>
+    <div class="header__burgerContainer" id="burgerButton">
+      <div class="header__burger--1" id="burgerBar1"></div>
+      <div class="header__burger--2" id="burgerBar2"></div>
+      <div class="header__burger--3" id="burgerBar3"></div>
+    </div>
+  </header>
 <body>
   <header class="header">
     <div class="header__left">
@@ -44,7 +85,13 @@
   </header>
   <section class="section" id="preparing">
     <div class="preparing">
-      <img src="./images/not-found.png" alt="sorry" class="preparing__image">
+      <picture>
+        <source srcset="./images/not-found.png.webp">
+        <img
+          class="footer__logo"
+          src="./images/not-found.png"
+          alt="sorry">
+      </picture>
       <h1 class="preparing__text">
         <span class="nowrap">申し訳ございません。</span>
         <span class="nowrap">このページは現在準備中です。</span>
@@ -52,10 +99,13 @@
     </div>
   </section>
   <footer class="footer">
-    <img 
-      class="footer__logo"
-      src="./images/logo.png"
-      alt="Nectere">
+    <picture>
+      <source srcset="./images/logo.png.webp">
+      <img
+        class="footer__logo"
+        src="./images/logo.png"
+        alt="Nectere">
+    </picture>
     <p class="footer__copyright">(c) Nectere  - 2021 - All rights Reserved.</p>
   </footer>
   <script src="./js/script.js"></script>
