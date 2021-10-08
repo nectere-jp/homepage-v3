@@ -37,9 +37,16 @@
   }
 }
 
+.header__right {
+  display: flex;
+  gap: 1px;
+}
+
 @media screen and (max-width: 1220px) {
-  .header .header__right, .header .header__right--open {
+  .header__right {
     display: flex;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -48,31 +55,16 @@
     gap: 15px;
     height: 600px;
     width: 100vw;
-    padding-top: 40px;
+    padding: 40px 10px 0;
     background: #135B86;
     z-index: 101;
-    transition: all .3s ease-in;
+    transition: .4s;
   }
 }
 
 @media screen and (max-width: 1220px) and (max-width: 650px) {
-  .header .header__right, .header .header__right--open {
-    height: 400px;
-  }
-}
-
-.header__right {
-  display: flex;
-  gap: 1px;
-}
-
-@media screen and (max-width: 1220px) {
   .header__right {
-    opacity: 0;
-    pointer-events: none;
-  }
-  .header__right--open {
-    opacity: 1;
+    height: 400px;
   }
 }
 
@@ -83,32 +75,26 @@
 @media screen and (max-width: 1220px) {
   .header__filter {
     display: block;
-    position: fixed;
+    visibility: hidden;
     opacity: 0;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vh;
     height: 100vh;
     background: rgba(0, 0, 0, 0.7);
     z-index: 100;
-    transition: opacity .3s, display 0 1s;
+    transition: .4s;
     pointer-events: none;
   }
 }
 
-.header__filter--open {
-  position: fixed;
+.header .isShow {
+  visibility: visible;
   opacity: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 100;
-  transition: opacity .3s;
 }
 
-.header .header__link, .header .header__link--contact {
+.header .header__link, .header .header__link--inpage, .header .header__link--contact, .header .header__link--inpage--contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -122,7 +108,7 @@
 }
 
 @media screen and (max-width: 1220px) {
-  .header .header__link, .header .header__link--contact {
+  .header .header__link, .header .header__link--inpage, .header .header__link--contact, .header .header__link--inpage--contact {
     width: 160px;
     height: 200px;
     border-radius: 10px;
@@ -130,14 +116,14 @@
 }
 
 @media screen and (max-width: 650px) {
-  .header .header__link, .header .header__link--contact {
+  .header .header__link, .header .header__link--inpage, .header .header__link--contact, .header .header__link--inpage--contact {
     width: 125px;
     height: 75px;
     font-size: 15px;
   }
 }
 
-.header .header__link::before, .header .header__link--contact::before {
+.header .header__link::before, .header .header__link--inpage::before, .header .header__link--contact::before, .header .header__link--inpage--contact::before {
   content: attr(data-english);
   display: block;
   font-weight: 400;
@@ -145,28 +131,28 @@
 }
 
 @media screen and (max-width: 650px) {
-  .header .header__link::before, .header .header__link--contact::before {
+  .header .header__link::before, .header .header__link--inpage::before, .header .header__link--contact::before, .header .header__link--inpage--contact::before {
     font-size: 10px;
   }
 }
 
-.header__link {
+.header__link, .header__link--inpage {
   width: 205px;
   background: #101010;
 }
 
 @media screen and (max-width: 1220px) {
-  .header__link {
+  .header__link, .header__link--inpage {
     background: #fff;
     color: #101010 !important;
   }
 }
 
-.header__link::before {
+.header__link::before, .header__link--inpage::before {
   color: #E35471;
 }
 
-.header__link--contact {
+.header__link--contact, .header__link--inpage--contact {
   width: 285px;
   background: #E35471;
 }
@@ -195,7 +181,7 @@
   }
 }
 
-.header .header__burger--1, .header .header__burger--1--open, .header .header__burger--2, .header .header__burger--2--open, .header .header__burger--3, .header .header__burger--3--open {
+.header .header__burger--1, .header .header__burger--2, .header .header__burger--3 {
   position: absolute;
   top: 50%;
   left: 0;
@@ -212,7 +198,7 @@
   transform: translateY(calc(-50% - 11px));
 }
 
-.header__burger--1--open {
+.header__burger--1.isOpen {
   transform: rotate(225deg);
 }
 
@@ -221,7 +207,7 @@
   opacity: 1;
 }
 
-.header__burger--2--open {
+.header__burger--2.isOpen {
   opacity: 0;
 }
 
@@ -229,7 +215,7 @@
   transform: translateY(calc(-50% + 11px));
 }
 
-.header__burger--3--open {
+.header__burger--3.isOpen {
   transform: rotate(-45deg);
 }
 /*# sourceMappingURL=header.css.map */

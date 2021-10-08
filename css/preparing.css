@@ -1,0 +1,40 @@
+.preparing {
+  margin-top: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .preparing {
+    margin-top: 150px;
+  }
+}
+
+.preparing__image {
+  width: 200px;
+  margin: 0 auto 30px;
+}
+
+.preparing__text {
+  color: #E35471;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .preparing__text {
+    font-size: 20px;
+  }
+}
+
+.preparing__text--small {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+/*# sourceMappingURL=preparing.css.map */
