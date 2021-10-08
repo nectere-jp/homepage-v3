@@ -457,7 +457,6 @@ template {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   font-family: source-han-sans-japanese, sans-serif;
   color: #101010;
   background: #FCF4F4;
@@ -2664,5 +2663,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  .preparing__text--small {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

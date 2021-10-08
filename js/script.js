@@ -1,4 +1,6 @@
 (function () {
+  document.getElementsByTagName("body")[0].style.minHeight = window.innerHeight + "px";
+
   const menuArea = document.getElementById("burgerMenu");
   const menuItem = document.getElementsByClassName("header__link--inpage");
   const button = document.getElementById("burgerButton");
